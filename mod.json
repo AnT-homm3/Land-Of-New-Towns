@@ -22,6 +22,7 @@
 	"mod_version": "3.4",
 	"priority": 2,
 	"compatibility": {
+		"incompatible": ["TUM Enchanted","ResOunD","ERA+","Towns of Day and Night","Knightmare Kingdoms","H3-HD-Edition","TUM-Enchanted-Graphic-Pack"],
 		"class": "default",
 		"entries": {
 			"WoG": true
