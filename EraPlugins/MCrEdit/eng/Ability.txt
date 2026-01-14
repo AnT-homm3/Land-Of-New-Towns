@@ -402,10 +402,10 @@ Ranged (12 shots), No melee penalty, No enemy retaliation, Accurate Shot
 
 
 
+shoot
+shoot, high moral
 
-
-stone gaze
-Close range shooting, stone gaze
+imposed spell - protection from air
 
 
 
@@ -417,31 +417,31 @@ Cast chain lightning. Protection from air. Thunderbolt.
 neutral moral
 neutral moral
 neutral moral
-neutral moral
+30% protection from shooting, neutral moral
 fly, neutral moral
-fly, neutral moral, always retaliations, 10% defens from shooting
-Spells 1-4 level immune, neutral moral
-Range retaliation, spells 1-4 level immune, neutral moral
-neutral moral, fearless
-neutral moral, fearless, chance of self-repair
-shoot, neutral moral, spell immune 1-3 lev. 
-shoot, neutral moral, spell immune 1-3 lev., 20% protection from shooting, attack walls.
-neutral moral
-neutral moral. 40% reduce defence, 40% protection from shooting
-+10% damage to undead
-dispel helpful spells, +20% damage to undead
-+10% damage to undead
-+20% damage to undead   25% chance od Death Blow, always high moral
-high moral, +10% damage to undead
-cast shield, fearless, +20% damage to undead
-15% firebolt, immune fire spells,  +10% damage to undead
-high moral, +20% damage to undead
-+10% damage to undead
-cast exorcism, +20% damage to undead
-7% reduce defence, +10% damage to undead
-30% reduce defence, +20% damage to undead
-Fearless, high moral, +10% damage to undead
-Fearless, high moral, chance to ignore attack, +20% damage to undead
+fly, neutral moral, 20% protection from shooting 
+Spells 1-3 level immune, neutral moral, 20% protection from shooting, 
+Range retaliation, spells 1-3 level immune, neutral moral, 30% protection from shooting 
+neutral moral, fearless, spells 1-3 level immune, 30% protection from shooting 
+neutral moral, fearless, chance of self-repair, spells 1-4 level immune, 40% protection from shooting 
+shoot, neutral moral, spell immune 1-4 lev. , 40% protection from shooting 
+shoot, neutral moral, spell immune 1-4 lev., 40% protection from shooting, attack walls.
+neutral moral, spells 1-4 level immune,  40% protection from shooting 
+neutral moral. 40% reduce defence, 50% protection from shooting, immune to all spells
++15% damage to undead
+dispel helpful spells, +25% damage to undead
++15% damage to undead
++25% damage to undead,   chance od Death Blow 
+high moral, +15% damage to undead
+cast shield, fearless, +25% damage to undead
+15% damage to undead
+high moral, +25% damage to undead
++15% damage to undead
+cast exorcism, +25% damage to undead
++15% damage to undead 
+30% reduce defence, +25% damage to undead, immune to joust. bonus
+High moral, +15% damage to undead
+Fearless. Hight moral, chance to ignore damage, +25% damage to undead
 
 
 
@@ -451,13 +451,13 @@ attack all around, high moral, 20% defense bonus, fearless
 regenerates
 damage spell reduced 85%, neutral moral
 
-
+poison
 cast random spell, hates infreeti
 shoots
-10% protection from shooting, cast precision
+10% protection from shooting, cast bloodlust
 stone gaze
 no enemy retallion, attack all around, regeneration
-
+Rebirth, Immune to fire spells
 Immune to fire spells, lighting bolt. neutral moral. cast protection from Earth
 Bind enemies
 
@@ -473,7 +473,7 @@ Bind enemies
 
 
 
-
+regeneration, chance of hard blow
 
 shoot
 
@@ -577,8 +577,8 @@ regeneration, no enemy retallion, teleport, neutral moral
 
 
 acid breath
-spell immune, neutral moral, fire immune, shoot, 50% reduce defence
-
+spells immune, neutral moral, fire immune, shoot, 50% reduce defence, 40% protection from shooting, shoot
+Regeneration, death blow
 
 shoot
 
@@ -601,25 +601,25 @@ protection from water spells
 No enemy retaliation, cast fear, mind immune
 Immune to fire, cast inferno, attack all around
 50% defence 
-reduce enemy defence by 80%
+reduce enemy defence by 85%
 Transform to a random creature. Neutral moral
+flies
+reduce enemy attack by 67%
+poisons the enemy
+chance to ignore attack, feraless, high moral, +20% damage to undead
 
 
 
 
 
+curse, death blow
+attack Ages enemies. dispel helpful spells
 
 
+immune to meteor shower, blind
+stone gaze
 
-
-
-
-
-
-
-
-
-
+Fearless
 
 
 

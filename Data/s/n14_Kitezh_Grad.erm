@@ -1,0 +1,206 @@
+ZVSE
+
+
+ ; Kitezh Grad - based on Rampart
+
+	
+-------------------------------------------------------------------	
+	
+!?FU(kitezh_grad___town); 					
+
+-----------------------------
+ ; replace town screen
+ ----------------------------
+
+!!FU(Restore_Default_TownScreen):P;			restore default screen first
+
+!-!FU(restore_XY_coordinates_rampart2):P;
+
+ ; new coordinates for Kitezh Grad
+!!FU(New_XY_coordinates_Rampart):P;
+
+!!FU(SetBuilding'sPosition):P1/17/0/0;			mysterious pond     0/310;
+!!FU(SetBuilding'sPosition):P1/21/0/0;			pond of luck        0/310;
+
+!!FU(SetBuilding'sPosition):P1/22/0/0;			22 treasury
+!!FU(SetBuilding'sPosition):P1/18/0/0;			level 2 horde		
+!!FU(SetBuilding'sPosition):P1/19/0/0;
+
+!!FU(SetBuilding'sPosition):P1/30/0/0;			level 1		
+!!FU(SetBuilding'sPosition):P1/37/0/0;
+
+!!FU(SetBuilding'sPosition):P1/31/0/0;			level 2		
+!!FU(SetBuilding'sPosition):P1/38/0/0;		
+
+!!FU(SetBuilding'sPosition):P1/33/-90/6;		baba yaga
+!!FU(SetBuilding'sPosition):P1/40/-90/0;		baba yaga upg.
+
+
+
+!!SN:R^TBRMBACK.pcx^/^TBKIBACK.pcx^;
+!!SN:R^Rampart.mp3^/^KitezhGrad.mp3^;
+!!SN:R^itpt.def^/^itpt_KI.def^;				town left avatar 
+!!SN:R^TPCASRAM.pcx^/^KIcrb120.pcx^;		background for monsters avatars
+!!SN:R^CRBKGRAM.pcx^/^KIcrb130.pcx^;
+!!SN:R^HALLRAMP.def^/^HALLKITE.def^;
+!!SN:R^SgRmBack.pcx^/^^;
+!!SN:R^TPMAGERM.pcx^/^TPMAGEKI.pcx^;		background for mageguild
+
+!!SN:R^TBRMBLAK.def^/^Kblacksmith.def^;
+!!SN:R^TBRMCAS2.def^/^Kcitadel.def^;
+!!SN:R^TBRMCAS3.def^/^Kcastle.def^;
+!!SN:R^TBRMCSTL.def^/^Kfort.def^;
+!!SN:R^TBRMDW_0.def^/^Kdw1.def^;
+!!SN:R^TBRMDW_1.def^/^Kdw2.def^;
+!!SN:R^TBRMDW_2.def^/^Kdw4.def^;			Kdw5u.def
+!!SN:R^TBRMDW_3.def^/^Kdw-babay.def^;		baba yaga	Kdw5b.def
+!!SN:R^TBRMDW_4.def^/^Kdw5.def^;
+!!SN:R^TBRMDW_5.def^/^Kdw6.def^;
+!!SN:R^TBRMDW_6.def^/^Kdw7.def^;
+!!SN:R^TBRMEXT0.def^/^KI-shipya.def^;		__magic pound				pond of luck?
+!!SN:R^TBRMEXT1.def^/^Kwell.def^;			treasury		small 1 cell
+!!SN:R^TBRMEXT2.def^/^Ki-blank.def^;		four small houses
+!!SN:R^TBRMEXT3.def^/^Ki-blank.def^;		3 houses			mystyc pound
+!!SN:R^TBRMEXT4.def^/^Ki-blank.def^;		7 houses
+!!SN:R^TBRMEXT5.def^/^Kwell.def^;			3 houses triangle
+!!SN:R^TBRMHAL2.def^/^Kcity.def^;
+!!SN:R^TBRMHAL3.def^/^Kcity.def^;
+!!SN:R^TBRMHAL4.def^/^Kcity.def^;
+!!SN:R^TBRMHALL.def^/^Kcity.def^;
+!!SN:R^TBRMHOLY.def^/^Kgrail.def^;
+!!SN:R^TBRMHRD1.def^/^Kdw2.def^;
+!!SN:R^TBRMHRD2.def^/^Kdw2u.def^;
+!!SN:R^TBRMHRD3.def^/^Kdw5u.def^;
+!!SN:R^TBRMHRD4.def^/^Kdw5u.def^;
+!!SN:R^TBRMMAG2.def^/^Kmage2.def^;
+!!SN:R^TBRMMAG3.def^/^Kmage3.def^;
+!!SN:R^TBRMMAG4.def^/^Kmage4.def^;
+!!SN:R^TBRMMAG5.def^/^Kmage4.def^;
+!!SN:R^TBRMMAGE.def^/^Kmage1.def^;
+!!SN:R^TBRMMARK.def^/^Kmarket.def^;
+!!SN:R^TBRMSILO.def^/^Ksilo.def^;
+!!SN:R^TBRMSPEC.def^/^KI-shipya.def^;					__fountain
+!!SN:R^TBRMTVRN.def^/^Ktavern.def^;
+!!SN:R^TBRMUP_0.def^/^Kwaterwhu.def^;
+!!SN:R^TBRMUP_1.def^/^Kdw2u.def^;
+!!SN:R^TBRMUP_2.def^/^Kstorogkau.def^;
+!!SN:R^TBRMUP_3.def^/^Kdw5bu.def^;			baba yaga upg.
+!!SN:R^TBRMUP_4.def^/^Kdw5u.def^;
+!!SN:R^TBRMUP_5.def^/^Kdw6u.def^;
+!!SN:R^TBRMUP_6.def^/^Kdw7u.def^;
+
+!!SN:R^TORAID.pcx^/^KOblacks.pcx^;
+!!SN:R^TORCAS1.pcx^/^KOfortb.pcx^;
+!!SN:R^TORCAS2.pcx^/^KOcitadelb.pcx^;
+!!SN:R^TORCAS3.pcx^/^KOcastleb.pcx^;
+!!SN:R^TORCEN1A.pcx^/^KOdw1b.pcx^;
+!!SN:R^TORCEN2A.pcx^/^KOhutorub.pcx^;
+!!SN:R^TORDR1AA.pcx^/^KOdw7b.pcx^;
+!!SN:R^TORDR2AA.pcx^/^KOdw7ub.pcx^;
+!!SN:R^TORDWF1.pcx^/^KOdw2b.pcx^;
+!!SN:R^TORDWF1H.pcx^/^KOdw2b.pcx^;
+!!SN:R^TORDWF2.pcx^/^KOdw2ub.pcx^;
+!!SN:R^TORDWF2H.pcx^/^KOdw2ub.pcx^;
+!!SN:R^TORDWFT.pcx^/^KOwellb.pcx^;		treasury	KOwellb.pcx
+!!SN:R^TORELF1.pcx^/^KOdw4b.pcx^;
+!!SN:R^TORELF2.pcx^/^KOratub.pcx^;
+!!SN:R^TORGAR1A.pcx^/^KO_shipy.pcx^;				KOwellb.pcx mystic pound
+!!SN:R^TORGAR2A.pcx^/^KO_shipy.pcx^;				fontain of luck	KZwella.pcx
+!!SN:R^TORHAL1.pcx^/^KOcityb.pcx^;
+!!SN:R^TORHAL2.pcx^/^KOcityb.pcx^;
+!!SN:R^TORHAL3.pcx^/^KOcityb.pcx^;
+!!SN:R^TORHAL4.pcx^/^KOcityb.pcx^;
+!!SN:R^TORHOLY.pcx^/^KOgrailb.pcx^;
+!!SN:R^TORMAG1.pcx^/^KOmage1b.pcx^;
+!!SN:R^TORMAG2.pcx^/^KOmage2b.pcx^;
+!!SN:R^TORMAG3.pcx^/^KOmage3b.pcx^;
+!!SN:R^TORMAG4.pcx^/^KOmage4b.pcx^;
+!!SN:R^TORMAG5.pcx^/^KOmage4b.pcx^;
+!!SN:R^TORMRK1.pcx^/^KOmarketb.pcx^;
+!!SN:R^TORMRK2.pcx^/^KOsilob.pcx^;
+!!SN:R^TORPEG1A.pcx^/^KOdw5bb.pcx^;			baba yaga
+!!SN:R^TORPEG2A.pcx^/^KOdw5bub.pcx^;
+!!SN:R^TORTAV.pcx^/^KOtavernb.pcx^;
+!!SN:R^TORTRE1.pcx^/^KOdw5b.pcx^;
+!!SN:R^TORTRE1H.pcx^/^KOdw5b.pcx^;
+!!SN:R^TORTRE2.pcx^/^KOdw5ub.pcx^;
+!!SN:R^TORTRE2H.pcx^/^KOdw5ub.pcx^;
+!!SN:R^TORUNI1.pcx^/^KOdw6b.pcx^;
+!!SN:R^TORUNI2.pcx^/^KOdw6ub.pcx^;
+!-!SN:R^TPCASRAM.pcx^/^^;
+
+
+!!SN:R^TZRAID.pcx^/^KZblacksm.pcx^;
+!!SN:R^TZRCAS1.pcx^/^KZforta.pcx^;
+!!SN:R^TZRCAS2.pcx^/^KZcitadela.pcx^;
+!!SN:R^TZRCAS3.pcx^/^KZcastlea.pcx^;
+!!SN:R^TZRCEN1A.pcx^/^KZdw1a.pcx^;
+!!SN:R^TZRCEN2A.pcx^/^KZhutorupa.pcx^;
+!!SN:R^TZRDR1AA.pcx^/^KZdw7a.pcx^;
+!!SN:R^TZRDR2AA.pcx^/^KZdw7ua.pcx^;
+!!SN:R^TZRDWF1.pcx^/^KZdw2a.pcx^;
+!!SN:R^TZRDWF1H.pcx^/^KZdw2a.pcx^;
+!!SN:R^TZRDWF2.pcx^/^KZdw2ua.pcx^;			
+!!SN:R^TZRDWF2H.pcx^/^KZdw2ua.pcx^;
+!!SN:R^TZRDWFT.pcx^/^KZwella.pcx^;			treasury
+!!SN:R^TZRELF1.pcx^/^KZdw4a.pcx^;
+!!SN:R^TZRELF2.pcx^/^KZratupaa.pcx^;
+!!SN:R^TZRGAR1A.pcx^/^KZ_shipy.pcx^;		KZwella.pcx
+!!SN:R^TZRGAR2A.pcx^/^KZ_shipy.pcx^;    	KZwella.pcx
+!!SN:R^TZRHAL1.pcx^/^KZcitya.pcx^;
+!!SN:R^TZRHAL2.pcx^/^KZcitya.pcx^;
+!!SN:R^TZRHAL3.pcx^/^KZcitya.pcx^;
+!!SN:R^TZRHAL4.pcx^/^KZcitya.pcx^;
+!!SN:R^TZRHOLY.pcx^/^KZgraila.pcx^;
+!!SN:R^TZRMAG1.pcx^/^KZmage1a.pcx^;
+!!SN:R^TZRMAG2.pcx^/^KZmage2a.pcx^;
+!!SN:R^TZRMAG3.pcx^/^KZmage3a.pcx^;
+!!SN:R^TZRMAG4.pcx^/^KZmage4a.pcx^;
+!!SN:R^TZRMAG5.pcx^/^KZmage4a.pcx^;
+!!SN:R^TZRMRK1.pcx^/^KZmarketa.pcx^;
+!!SN:R^TZRMRK2.pcx^/^KZsiloa.pcx^;
+!!SN:R^TZRPEG1A.pcx^/^KZdw5ba.pcx^;			baba yaga
+!!SN:R^TZRPEG2A.pcx^/^KZdw5bua.pcx^;
+!!SN:R^TZRTAV.pcx^/^KZtaverna.pcx^;
+!!SN:R^TZRTRE1.pcx^/^KZdw5a.pcx^;
+!!SN:R^TZRTRE1H.pcx^/^KZdw5a.pcx^;
+!!SN:R^TZRTRE2.pcx^/^KZdw5ua.pcx^;
+!!SN:R^TZRTRE2H.pcx^/^KZdw5ua.pcx^;
+!!SN:R^TZRUNI1.pcx^/^KZdw6a.pcx^;
+!!SN:R^TZRUNI2.pcx^/^KZdw6ua.pcx^;
+
+
+
+ 
+ 
+ -----------------------------
+ ; replace creatures
+-----------------------------
+
+	!!FU(kitezh_grad___monsters):P;
+
+
+!!FU(kitezh_grad___town):E;  end function 
+
+
+
+
+-------------------------------------
+!?FU(kitezh_grad___monsters);
+
+!!UN:T1/0/0/374;   
+!!UN:T1/0/1/375;
+!!UN:T1/1/0/376;
+!!UN:T1/1/1/377;
+!!UN:T1/2/0/378;		
+!!UN:T1/2/1/379;
+!!UN:T1/3/0/380;		
+!!UN:T1/3/1/381;		baba yaga		
+!!UN:T1/4/0/382;		
+!!UN:T1/4/1/383;		
+!!UN:T1/5/0/384;		sirin
+!!UN:T1/5/1/385;		alkonost
+!!UN:T1/6/0/386;
+!!UN:T1/6/1/387;
+
+!!FU(kitezh_grad___monsters):E;

@@ -27,11 +27,9 @@ ZVSE
 !!FU(SetBuilding'sPosition):P6/11/0/0;
 !!FU(SetBuilding'sPosition):P6/12/0/0;
 !!FU(SetBuilding'sPosition):P6/13/0/0;		13/141/96;
-!!FU(SetBuilding'sPosition):P6/14/-15/30;	market
-!-!FU(SetBuilding'sPosition):P6/14/0/0;
-!-!FU(SetBuilding'sPosition):P6/15/-130/60;		silo	-130/60;	
-!!FU(SetBuilding'sPosition):P6/15/420/240;		silo	-130/60;		
-!!FU(SetBuilding'sPosition):P6/16/74/-8;	blacksmith
+!!FU(SetBuilding'sPosition):P6/14/0/0;		market	-15/30;
+!!FU(SetBuilding'sPosition):P6/15/420/240;	silo	420/240;		-130/60;		
+!!FU(SetBuilding'sPosition):P6/16/60/10;				124/93;		blacksmith   74/10;    -8
 !-!FU(SetBuilding'sPosition):P6/17/0/0;
 !!FU(SetBuilding'sPosition):P6/18/0/0;		horde 1
 !!FU(SetBuilding'sPosition):P6/19/0/0;		horde 2
@@ -42,7 +40,7 @@ ZVSE
 !-!FU(SetBuilding'sPosition):P6/27/0/0;		water line in bastion
 
 !!FU(SetBuilding'sPosition):P6/30/0/0;
-!!FU(SetBuilding'sPosition):P6/31/-50/15;
+!!FU(SetBuilding'sPosition):P6/31/0/0;		-50/15;
 !!FU(SetBuilding'sPosition):P6/32/0/0;
 !!FU(SetBuilding'sPosition):P6/33/0/0;
 !!FU(SetBuilding'sPosition):P6/34/0/-8;
@@ -50,7 +48,7 @@ ZVSE
 !!FU(SetBuilding'sPosition):P6/36/0/0;
 
 !!FU(SetBuilding'sPosition):P6/37/0/0;
-!!FU(SetBuilding'sPosition):P6/38/-55/15;		-50/15;
+!!FU(SetBuilding'sPosition):P6/38/0/0;		-55/15;		-50/15;
 !!FU(SetBuilding'sPosition):P6/39/0/0;
 !!FU(SetBuilding'sPosition):P6/40/0/0;
 !!FU(SetBuilding'sPosition):P6/41/0/-8;
@@ -68,6 +66,10 @@ ZVSE
 !!SN:R^TPCASSTR.pcx^/^TPCASpyr.pcx^;	background for creatures
 !!SN:R^CRBKGSTR.pcx^/^CRBKGpyr.pcx^;
 
+!!SN:R^TPMAGEst.pcx^/^TPMAGEpy.pcx^;	mage guild pic
+!!SN:R^itpt.def^/^itpt_PY.def^;		town left avatar var1
+
+
 !!SN:R^HALLSTRN.def^/^HALLPyra.def^;
 
 !!SN:D;
@@ -77,7 +79,7 @@ ZVSE
 !!SN:R^TBSTCAS3.def^/^pycas3.def^;
 !!SN:R^TBSTCSTL.def^/^pycas1.def^;
 !!SN:R^TBSTDW_0.def^/^PYdw0.def^;
-!!SN:R^TBSTDW_1.def^/^PYdw5.def^;
+!!SN:R^TBSTDW_1.def^/^PYdw5upg.def^;
 !!SN:R^TBSTDW_2.def^/^PYdw4.def^;
 !!SN:R^TBSTDW_3.def^/^PY_lev4.def^;
 !!SN:R^TBSTDW_4.def^/^PY_dw5.def^;		don't work?
@@ -113,7 +115,7 @@ ZVSE
 !-!SN:R^TBStMark.def^/^PYmket1.def^;
 
 !!SN:R^TOSBEH1A.pcx^/^pOdw6a.pcx^;		7 level
-!!SN:R^TOSBEH2A.pcx^/^pOdw6b.pcx^;
+!!SN:R^TOSBEH2A.pcx^/^pOdw6upgb.pcx^;
 !!SN:R^TOSBLK1.pcx^/^pOsmithb1.pcx^;
 !!SN:R^TOSBLK2.pcx^/^pOsmithb2.pcx^;
 !!SN:R^TOSCA1.pcx^/^pOcas1b.pcx^;
@@ -145,7 +147,7 @@ ZVSE
 !!SN:R^TOSROC2.pcx^/^po_dw6.pcx^;
 !!SN:R^TOSTAV.pcx^/^pOtavernb.pcx^;
 !!SN:R^TOSVAH.pcx^/^pOspec1b.pcx^;			walgalla temple
-!!SN:R^TOSWOL1.pcx^/^pOdw5b.pcx^;			2 level
+!!SN:R^TOSWOL1.pcx^/^pOdw5upgb.pcx^;			2 level
 !!SN:R^TOSWOL2.pcx^/^pOdw5upgb.pcx^;
 !-!SN:R^TPCASSTR.pcx^/^TPCASSTRb.pcx^;
 !-!SN:R^TPMAGEST.pcx^/^TPMAGESTb.pcx^;

@@ -755,7 +755,10 @@ Sand Town
 !!FU(SetBuilding'sPosition):P5/37/0/300;
 !!FU(SetBuilding'sPosition):P5/38/0/26;
 !!FU(SetBuilding'sPosition):P5/39/118/256;
-!!SN:R^TPCASdun.pcx^/^^;		background for monsters avatars
+!-!SN:R^TPCASdun.pcx^/^^;		background for monsters avatars
+
+!!SN:R^TPCASdun.pcx^/^^;		back for monsters avatars
+!!SN:R^CRBKGDUN.PCX^/^^;
  
 !!SN:R^TBDNBACK.pcx^/^^;
 !!SN:R^DUNGEON.MP3^/^^;
@@ -917,6 +920,9 @@ Fortress (Mystic town )
 !!SN:R^TZFLIZ2.pcx^/^^;
 !!SN:R^TZFHAL4.pcx^/^^;
 !!SN:R^TZFWYV2.pcx^/^^;
+
+!-!FU(SetBuilding'sPosition):P6/19/100/150;
+!-!IF:M^1^;
 
 
 

@@ -1,5 +1,18 @@
 Version history:
 
+ver. 3.5 
+* Added 3 upgrades for select towns (see Manual.pdf)
+* Pyramid town rework
+* Added new artifacts
+* Added new external dwellings and creatures
+* Adjusted guard counts for map objects (e.g., Dragon Utopia, Crusaders Outpost)
+* Changes in Mythology town unit lineup.
+* Adjusted unit parameters for Knight’s Castle
+* Adjusted unit parameters for Techno Town
+* Fixed game crash occurring at the start of battles
+* Fixed various minor bugs
+
+
 ver. 3.4
 * Added 2 new towns: Mythology (based on Mythology mod), Techno town (based on Technocracy VCMI). 
   Total number of towns is 24 with no replacements

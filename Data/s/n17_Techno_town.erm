@@ -231,6 +231,22 @@ ZVSE
 !!UN:T3/6/0/428;
 !!UN:T3/6/1/429; 
 
+!!UN:T3/0/0/416;	
+!!UN:T3/0/1/417;
+!!UN:T3/1/0/418;			
+!!UN:T3/1/1/419;		
+!!UN:T3/2/0/622;	kolesun	
+!!UN:T3/2/1/623;		
+!!UN:T3/3/0/420;		
+!!UN:T3/3/1/421;		
+!!UN:T3/4/0/422;	
+!!UN:T3/4/1/423;	
+!!UN:T3/5/0/424;
+!!UN:T3/5/1/425;
+!!UN:T3/6/0/426;
+!!UN:T3/6/1/427;
+
+
  
 !!FU(techno___monsters):E; 
  
@@ -268,31 +284,31 @@ vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
 !!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/0/1/1/416/40;	
 !!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/0/1/0/417/40;
 
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/0/0/418/45;		robot1	
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/1/1/418/45;	
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/1/0/419/45;	
-
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/0/0/420/60;		Mechanoid	
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/1/1/420/60;	
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/1/0/421/60;	
-
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/0/0/422/80;		Mech Grifons 422 423 (70%=5)
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/1/1/422/80;	
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/1/0/423/80;	
-
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/0/0/424/50;		dw5 
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/1/1/424/50;		upg_dw  
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/1/0/425/50;		upg_dw  
-
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/0/0/426/50;		dw6  
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/1/1/426/50;		upg_dw 6 
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/1/0/427/50;		upg_dw 6 
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/0/0/418/45;		robot1	
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/1/1/418/45;	
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/1/1/0/419/45;	
+ -
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/0/0/420/60;		Mechanoid	
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/1/1/420/60;	
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/2/1/0/421/60;	
+ -
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/0/0/422/80;		Mech Grifons 422 423 (70%=5)
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/1/1/422/80;	
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/3/1/0/423/80;	
+ -
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/0/0/424/50;		dw5 
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/1/1/424/50;		upg_dw  
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/4/1/0/425/50;		upg_dw  
+ -
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/0/0/426/50;		dw6  
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/1/1/426/50;		upg_dw 6 
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/5/1/0/427/50;		upg_dw 6 
 
 
 !!CA0/y1&y2=3/vx16=1:B5/18;		disallow horde dw1 (18,19) for Techno town 
 !!CA0/y1&y2=3/vx16=1:B5/19;
-!!CA0/y1&y2=3/vx16=1:B5/24;		disallow horde dw3 (24,25)
-!!CA0/y1&y2=3/vx16=1:B5/25;
+!-!CA0/y1&y2=3/vx16=1:B5/24;		disallow horde dw3 (24,25)
+!-!CA0/y1&y2=3/vx16=1:B5/25;
 !!CA0/y1&y2=3/vx16=1:B5/21;		disallow Brimstone stormclouds
 
 
@@ -314,25 +330,25 @@ vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
 !!FU(dex_SetDwellingSlotByTownType):P3/0/1/1/416/40;	
 !!FU(dex_SetDwellingSlotByTownType):P3/0/1/0/417/40;
 
-!!FU(dex_SetDwellingSlotByTownType):P3/1/0/0/418/45;		robot1	
-!!FU(dex_SetDwellingSlotByTownType):P3/1/1/1/418/45;	
-!!FU(dex_SetDwellingSlotByTownType):P3/1/1/0/419/45;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/1/0/0/418/45;		robot1	
+!-!FU(dex_SetDwellingSlotByTownType):P3/1/1/1/418/45;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/1/1/0/419/45;	
 
-!!FU(dex_SetDwellingSlotByTownType):P3/2/0/0/420/60;		Mechanoid	
-!!FU(dex_SetDwellingSlotByTownType):P3/2/1/1/420/60;	
-!!FU(dex_SetDwellingSlotByTownType):P3/2/1/0/421/60;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/2/0/0/420/60;		Mechanoid	
+!-!FU(dex_SetDwellingSlotByTownType):P3/2/1/1/420/60;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/2/1/0/421/60;	
 
-!!FU(dex_SetDwellingSlotByTownType):P3/3/0/0/422/80;		Mech Grifons 422 423 (70%=5)
-!!FU(dex_SetDwellingSlotByTownType):P3/3/1/1/422/80;	
-!!FU(dex_SetDwellingSlotByTownType):P3/3/1/0/423/80;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/3/0/0/422/80;		Mech Grifons 422 423 (70%=5)
+!-!FU(dex_SetDwellingSlotByTownType):P3/3/1/1/422/80;	
+!-!FU(dex_SetDwellingSlotByTownType):P3/3/1/0/423/80;	
 
-!!FU(dex_SetDwellingSlotByTownType):P3/4/0/0/424/50;		dw5 
-!!FU(dex_SetDwellingSlotByTownType):P3/4/1/1/424/50;		  
-!!FU(dex_SetDwellingSlotByTownType):P3/4/1/0/425/50;		  
+!-!FU(dex_SetDwellingSlotByTownType):P3/4/0/0/424/50;		dw5 
+!-!FU(dex_SetDwellingSlotByTownType):P3/4/1/1/424/50;		  
+!-!FU(dex_SetDwellingSlotByTownType):P3/4/1/0/425/50;		  
 
-!!FU(dex_SetDwellingSlotByTownType):P3/5/0/0/426/50;		dw6  
-!!FU(dex_SetDwellingSlotByTownType):P3/5/1/1/426/50;		upg_dw 6 
-!!FU(dex_SetDwellingSlotByTownType):P3/5/1/0/427/50;		upg_dw 6 
+!-!FU(dex_SetDwellingSlotByTownType):P3/5/0/0/426/50;		dw6  
+!-!FU(dex_SetDwellingSlotByTownType):P3/5/1/1/426/50;		upg_dw 6 
+!-!FU(dex_SetDwellingSlotByTownType):P3/5/1/0/427/50;		upg_dw 6 
 
 !!UN:T3/6/0/428;											dw7
 !!UN:T3/6/1/429;

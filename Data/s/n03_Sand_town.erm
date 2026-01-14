@@ -17,6 +17,8 @@ ZVSE
 	!!FU(SetBuilding'sPosition):P6/1/0/0;
 	!!FU(SetBuilding'sPosition):P6/2/0/0;
 	
+	!!FU(SetBuilding'sPosition):P6/5/0/0;	tavern
+	
 	!!FU(SetBuilding'sPosition):P6/7/0/0;
 	!!FU(SetBuilding'sPosition):P6/8/0/0;
 	!!FU(SetBuilding'sPosition):P6/9/0/0;
@@ -25,6 +27,9 @@ ZVSE
 	!!FU(SetBuilding'sPosition):P6/11/0/0;   +8/43/60;
 	!!FU(SetBuilding'sPosition):P6/12/0/0;
 	!!FU(SetBuilding'sPosition):P6/13/0/0;
+	
+	!-!FU(SetBuilding'sPosition):P6/33/0/0;
+	!-!FU(SetBuilding'sPosition):P6/40/-280/-150;
 
 	
 	; restore first   default def
@@ -39,7 +44,7 @@ Stronghold
 !!SN:R^TBSTDW_0.def^/^^;
 !!SN:R^TBSTDW_1.def^/^^;
 !!SN:R^TBSTDW_2.def^/^^;
-!!SN:R^TBSTDW_3.def^/^^;
+!!SN:R^TBSTDW_3.def^/^^;	TBsaDW_3.def^;
 !!SN:R^TBSTDW_4.def^/^^;
 !!SN:R^TBSTDW_5.def^/^^;
 !!SN:R^TBSTDW_6.def^/^^;
@@ -60,11 +65,11 @@ Stronghold
 !!SN:R^TBSTMARK.def^/^^;
 !!SN:R^TBSTSILO.def^/^^;
 !!SN:R^TBSTSPEC.def^/^^;
-!!SN:R^TBSTTVRN.def^/^^;
+!!SN:R^TBSTTVRN.def^/^TBsaTVRN.def^;
 !!SN:R^TBSTUP_0.def^/^^;
 !!SN:R^TBSTUP_1.def^/^^;
 !!SN:R^TBSTUP_2.def^/^^;
-!!SN:R^TBSTUP_3.def^/^^;
+!!SN:R^TBSTUP_3.def^/^TBsaDW_3.def^;
 !!SN:R^TBSTUP_4.def^/^^;
 !!SN:R^TBSTUP_5.def^/^^;
 !!SN:R^TBSTUP_6.def^/^^;
@@ -94,13 +99,13 @@ Stronghold
 !!SN:R^TOSMRK1.pcx^/^^;
 !!SN:R^TOSMRK1C.pcx^/^^;
 !!SN:R^TOSMRK2.pcx^/^^;
-!!SN:R^TOSOGR1.pcx^/^^;
-!!SN:R^TOSOGR2.pcx^/^^;
+!!SN:R^TOSOGR1.pcx^/^^; TOsaOGR1.pcx^;
+!!SN:R^TOSOGR2.pcx^/^^; TOsaOGR1.pcx^;
 !!SN:R^TOSORC1.pcx^/^^;
 !!SN:R^TOSORC2.pcx^/^^;
 !!SN:R^TOSROC1.pcx^/^^;
 !!SN:R^TOSROC2.pcx^/^^;
-!!SN:R^TOSTAV.pcx^/^^;
+!!SN:R^TOSTAV.pcx^/^TOsaTAV.pcx^;
 !!SN:R^TOSVAH.pcx^/^^;
 !!SN:R^TOSWOL1.pcx^/^^;
 !!SN:R^TOSWOL2.pcx^/^^;
@@ -132,13 +137,13 @@ Stronghold
 !!SN:R^TZSMRK1.pcx^/^^;
 !!SN:R^TZSMRK1C.pcx^/^^;
 !!SN:R^TZSMRK2.pcx^/^^;
-!!SN:R^TZSOGR1.pcx^/^^;
-!!SN:R^TZSOGR2.pcx^/^^;
+!!SN:R^TZSOGR1.pcx^/^^;		TZsaOGR1.pcx^;
+!!SN:R^TZSOGR2.pcx^/^^;		TZsaOGR1.pcx^;
 !!SN:R^TZSORC1.pcx^/^^;
 !!SN:R^TZSORC2.pcx^/^^;
 !!SN:R^TZSROC1.pcx^/^^;
 !!SN:R^TZSROC2.pcx^/^^;
-!!SN:R^TZSTAV.pcx^/^^;
+!!SN:R^TZSTAV.pcx^/^TZsaTAV.pcx^;
 !!SN:R^TZSVAH.pcx^/^^;
 !!SN:R^TZSWOL1.pcx^/^^;
 !!SN:R^TZSWOL2.pcx^/^^;	

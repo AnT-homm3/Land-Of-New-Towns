@@ -1,0 +1,85 @@
+ZVSE2
+
+!#DC(ART_GOLDEN_GOOSE)             = 179;
+!#DC(ART_GOLDEN_GLOVES)            = 402;
+!#DC(ART_GOLDEN_SWORD)             = 408;
+
+
+
+; Set up global variable for whether Emerald is enabled. Note: Using On Start Or Load is not allowed as it is too late!
+!?FU(tum_CheckPlugins);
+!!SN:L^emerald3_3.era^/?(emer3:y);
+!!SN:L^emerald3_3.dll^/?(emer3Var:y);
+!!SN:L^emerald_v202a.era^/?(emer2:y);
+!!SN:L^emerald_v202a.dll^/?(emer2Var:y);
+
+!!if|(emer3)<>0/(emer3Var)<>0/(emer2)<>0/(emer2Var);
+  !!VRi^tum_emerald_on^:S(TRUE);
+!!en;
+
+
+
+
+
+
+**********************
+**** Golden Gloves ****
+**********************
+// Script by Archer30
+; Works with Backpack Artifact option
+; Note that Golden Goose combination artifact does not include its components' effect by default
+!?FU(OnEveryDay)&i^tum_emerald_on^/i^timerOnce^;
+!?FU(OnEveryDay)&i^timerOnce^;
+!!UN:P727/?(backpackArt:y);             [Check Backpack Artifact option of Era Scripts]
+
+
+!!re i/(HERO_FIRST)/(HERO_LAST_WOG);
+  !!HEi:O?(owner:y);
+
+  !!if&(owner)>(NO_OWNER);
+    !!HEi:A2/(ART_GOLDEN_GLOVES)/?(has:y)/?(equipped:y);
+    !!co&(has)=0:E;
+
+    !!if&(backpackArt);;
+      !!VR(bonusGold:y):S(has) *400;
+    !!el;
+      !!VR(bonusGold):S(equipped) *400;
+    !!en;
+
+    !!OW:R(owner)/(RES_GOLD)/d(bonusGold);
+  !!en;
+!!en;
+
+
+
+
+
+
+
+**********************
+**** Golden Sword ****
+**********************
+// Script by Archer30
+; Works with Backpack Artifact option
+; Note that Golden Goose combination artifact does not include its components' effect by default
+!?FU(OnEveryDay)&i^tum_emerald_on^/i^timerOnce^;
+!?FU(OnEveryDay)&i^timerOnce^;
+!!UN:P727/?(backpackArt:y);             [Check Backpack Artifact option of Era Scripts]
+
+
+!!re i/(HERO_FIRST)/(HERO_LAST_WOG);
+  !!HEi:O?(owner:y);
+
+  !!if&(owner)>(NO_OWNER);
+    !!HEi:A2/(ART_GOLDEN_SWORD)/?(has:y)/?(equipped:y);
+    !!co&(has)=0:E;
+
+    !!if&(backpackArt);;
+      !!VR(bonusGold:y):S(has) *1000;
+    !!el;
+      !!VR(bonusGold):S(equipped) *1000;
+    !!en;
+
+    !!OW:R(owner)/(RES_GOLD)/d(bonusGold);
+  !!en;
+!!en;

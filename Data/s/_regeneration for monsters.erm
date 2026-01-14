@@ -26,7 +26,7 @@ ZVSE2
 !!if&(monType)=425;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=25:S80;	!!en;
 !!if&(monType)=450;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=35:S150;	!!en;	Legendary Worms
 !!if&(monType)=452;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=15:S30;	!!en;
-!!if&(monType)=458;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=20:S80;	!!en;	Advanced Hydra
+!!if&(monType)=458;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=20:S120;	!!en;	Red Hydra
 !!if&(monType)=475;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=35:S90;	!!en;	Owner of DeepSwamp
 !!if&(monType)=487;	!!VR(random:y):R0/1/100;	!!VR(finalValue)&(random)<=40:S70;	!!en;	Yeti
 

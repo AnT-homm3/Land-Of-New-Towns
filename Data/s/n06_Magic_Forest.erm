@@ -27,8 +27,11 @@ ZVSE
 !!FU(SetBuilding'sPosition):P1/19/0/180;				horde for 2 lvl
 !!FU(SetBuilding'sPosition):P1/22/0/220;				treasury
 
-!!FU(SetBuilding'sPosition):P1/33/287/23;		73;		5 lvl		+
-!!FU(SetBuilding'sPosition):P1/40/287/12;				5 lvl upg
+!!FU(SetBuilding'sPosition):P1/33/287/43;		73;		4 lvl		for new background
+!!FU(SetBuilding'sPosition):P1/40/287/50;				4 lvl upg	for new background
+
+!-!FU(SetBuilding'sPosition):P1/33/287/23;		73;		5 lvl		+
+!-!FU(SetBuilding'sPosition):P1/40/287/12;				5 lvl upg
 
 !!FU(SetBuilding'sPosition):P1/36/560/40;				7 lvl		
 !!FU(SetBuilding'sPosition):P1/43/560/40;				7 lvl upg
@@ -97,12 +100,12 @@ ZVSE
 !!UN:T1/0/1/257;
 !!UN:T1/1/0/258;
 !!UN:T1/1/1/259;
-!!UN:T1/2/0/260;		forest harpii
-!!UN:T1/2/1/261;
+!!UN:T1/2/0/569;		260;		forest harpii
+!!UN:T1/2/1/570;		261;
 !!UN:T1/3/0/262;		favn
 !!UN:T1/3/1/263;		satir
-!!UN:T1/4/0/264;		
-!!UN:T1/4/1/265;		
+!!UN:T1/4/0/260;	569;			264;		
+!!UN:T1/4/1/261;	570;			265;		
 !!UN:T1/5/0/266;		spriggans
 !!UN:T1/5/1/267;
 !!UN:T1/6/0/268;

@@ -1,0 +1,80 @@
+ZVSE
+
+
+ ; Oasis town - based on Conflux
+
+	
+-------------------------------------------------------------------	
+	
+	
+	
+!?FU(oasis___town); 					
+
+-----------------------------
+ ; replace town screen
+ ----------------------------
+ 
+!!FU(Restore_Default_TownScreen):P;			restore default screen first
+
+!!SN:R^TBELBack.pcx^/^OASISBack.pcx^;	
+!!SN:R^HallElem.def^/^HallOasi.def^;		
+!!SN:R^ElemTown.mp3^/^Oasis.mp3^;
+
+!!SN:R^TBELExt1.def^/^TBEoExt1.def^;
+!!SN:R^TBELExt2.def^/^TBEoExt2.def^;
+!!SN:R^TBELExt3.def^/^TBEoExt3.def^;
+!!SN:R^TBELcstl.def^/^TBEocstl.def^;
+!!SN:R^TBELcas2.def^/^TBEocas2.def^;
+!!SN:R^TBELcas3.def^/^TBEocas3.def^;
+!!SN:R^TBELdw_1.def^/^TBELdw1o.def^;
+!!SN:R^TBELup_1.def^/^TBELup1o.def^;
+!-!SN:R^TBELDW_5.def^/^TBoaDW_5.def^;
+!-!SN:R^TBELUP_5.def^/^TBoaUP_5.def^;
+!!SN:R^TBELDW_6.def^/^TBELdw6o.def^;
+!!SN:R^TBELup_6.def^/^TBELup6o.def^;
+!-!SN:R^TBELcas3.def^/^TBELcas3o.def^;
+
+!!SN:R^TOELdw_1.pcx^/^TOELup1o.pcx^;
+!!SN:R^TOELUP_1.pcx^/^TOELUP1o.pcx^;
+!!SN:R^TOELDW_6.pcx^/^TOELUP6o.pcx^;
+!!SN:R^TOELUP_6.pcx^/^TOELUP6o.pcx^;
+
+!!SN:R^TZELdw_1.pcx^/^TZELup1o.pcx^;
+!!SN:R^TZELUp_1.pcx^/^TZELUp1o.pcx^;
+!!SN:R^TZELdw_6.pcx^/^TZELUp6o.pcx^;
+!!SN:R^TZELUp_6.pcx^/^TZELUp6o.pcx^;
+
+ 
+ 
+ -----------------------------
+ ; replace creatures
+-----------------------------
+
+	!!FU(oasis___monsters):P;
+
+
+!!FU(oasis___town):E;  end function
+ 
+ 
+ 
+
+ ---------------------------
+ 
+!?FU(oasis___monsters); 
+
+!!UN:T8/0/0/345;   
+!!UN:T8/0/1/346;
+!!UN:T8/1/0/347;
+!!UN:T8/1/1/348;
+!!UN:T8/2/0/349;		
+!!UN:T8/2/1/350;		
+!!UN:T8/3/0/351;
+!!UN:T8/3/1/352;	sand spirit
+!!UN:T8/4/0/353;	 	
+!!UN:T8/4/1/354; 		
+!!UN:T8/5/0/355;	 	
+!!UN:T8/5/1/356; 		
+!!UN:T8/6/0/357;
+!!UN:T8/6/1/358;
+					
+!!FU(oasis___monsters):E; 					

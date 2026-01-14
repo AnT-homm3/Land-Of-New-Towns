@@ -1,0 +1,74 @@
+{
+	"RMG": {
+		"objectGeneration": {
+			"16": {
+
+				
+				
+				
+				"92": {
+									
+					"density": 20,
+					"enabled": true,
+					"name": "Gold Golem Storage",
+					"properties": [
+						"GoldG_st.def 000111111111111111111111111111111111111111111111 010000000000000000000000000000000000000000000000 111111111 011111111 16 92 0 0"
+
+					],
+					"sound": {
+						"enter": null,
+						"loop":  null,
+					},
+					"states": [
+						{
+							"artifactTypeCounts": [0,0,0,0],
+							"chance": 90,
+							"creatureRewardCount": 8,
+							"creatureRewardType": 451,
+							"guardians": {
+								"count": [10,10,25,15,15,0,0],
+								"type":  [451,451,542,116,116,-1,-1]
+							},
+							"resources": [0,0,0,0,0,0,20000,0],
+							"skills.primary": [0,0,0,0],
+							"upgrade": 0
+						},
+						
+						
+						{
+							"artifactTypeCounts": [0,0,0,0],
+							"chance": 10,
+							"creatureRewardCount": 20,
+							"creatureRewardType": 451,
+							"guardians": {
+								"count": [30,30,8,35,35,0,0],
+								"type": [451,451,545,116,116,-1,-1]
+
+							},
+							"resources": [0,0,0,0,0,0,40000,5],
+							"skills.primary": [0,0,0,1],
+							"upgrade": 30
+						},
+
+					],
+					"value": 5000,
+					"map": 4,
+					"zone": 4
+				},
+				
+				
+				
+				
+
+
+
+
+
+
+				
+					}
+							}
+							
+			}
+}
+			

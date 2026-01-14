@@ -32,18 +32,18 @@ Parameter Settings:
 Set the guards and the number of each slot.
 !#VRi^CB_088_Guards_Type_Slot_0^:S27;    (Write here the Type of Creatures Guarding the CB. Check ERM help. The name of the creature in Slot 0 will be displayed when you defeat the CB.)
 !#VRi^CB_088_Guards_Type_Slot_1^:S27;        
-!#VRi^CB_088_Guards_Type_Slot_2^:S116;        
-!#VRi^CB_088_Guards_Type_Slot_3^:S116;      
-!#VRi^CB_088_Guards_Type_Slot_4^:S-1;       
+!#VRi^CB_088_Guards_Type_Slot_2^:S608;        
+!#VRi^CB_088_Guards_Type_Slot_3^:S608;      
+!#VRi^CB_088_Guards_Type_Slot_4^:S608;       
 !#VRi^CB_088_Guards_Type_Slot_5^:S-1;       
 !#VRi^CB_088_Guards_Type_Slot_6^:S-1;
 !#VRi^CB_088_Guards_Type_Slot_7^:S-1;        
 
-!#VRi^CB_088_Guards_Number_Slot_0^:S15; (Write here the Number of Creatures Guarding the CB for each slot. If no type for that slot is selected (-1) also put in (-1) for the number.)
-!#VRi^CB_088_Guards_Number_Slot_1^:S15;     
-!#VRi^CB_088_Guards_Number_Slot_2^:S55;    
-!#VRi^CB_088_Guards_Number_Slot_3^:S55;     
-!#VRi^CB_088_Guards_Number_Slot_4^:S-1;        
+!#VRi^CB_088_Guards_Number_Slot_0^:S12; (Write here the Number of Creatures Guarding the CB for each slot. If no type for that slot is selected (-1) also put in (-1) for the number.)
+!#VRi^CB_088_Guards_Number_Slot_1^:S12;     
+!#VRi^CB_088_Guards_Number_Slot_2^:S3;    
+!#VRi^CB_088_Guards_Number_Slot_3^:S2;     
+!#VRi^CB_088_Guards_Number_Slot_4^:S2;        
 !#VRi^CB_088_Guards_Number_Slot_5^:S-1;     
 !#VRi^CB_088_Guards_Number_Slot_6^:S-1; 
 !#VRi^CB_088_Guards_Number_Slot_7^:S-1; 
@@ -102,7 +102,7 @@ At the end of the mod search for Check_Forbidden_Artifacts and remove the code t
 !#VRi^CB_088_Replace_On_2^:S0; Grass
 !#VRi^CB_088_Replace_On_3^:S0; Snow
 !#VRi^CB_088_Replace_On_4^:S0; Swamp
-!#VRi^CB_088_Replace_On_5^:S1; Rough
+!#VRi^CB_088_Replace_On_5^:S0; Rough
 !#VRi^CB_088_Replace_On_6^:S1; Subterranean
 !#VRi^CB_088_Replace_On_7^:S0; Lava
 !#VRi^CB_088_Replace_On_8^:S0; Water
@@ -110,7 +110,7 @@ At the end of the mod search for Check_Forbidden_Artifacts and remove the code t
 
 !#VRi^CB_088_Replace_0_Type_Number^:S25;   (Write here type number of the objects you want to search and replace. Input 0-231. Check ERM Help OB)
 !#VRi^CB_088_Replace_0_SubType_Number^:S0; (Write here subtype number of the objects you want to search and replace. Input 0-max Subtype. Check ERM Help OB)
-!#VRi^CB_088_Replace_0_Percentage^:S20;    (The chance in % by which each object is replaced by the new Creature Bank. Input 0-100)
+!#VRi^CB_088_Replace_0_Percentage^:S10;    (The chance in % by which each object is replaced by the new Creature Bank. Input 0-100)
 !#VRi^CB_088_Replace_0_X_Offset^:S1;       (Offset for the yellow entrance +-)
 
 !#VRi^CB_088_Replace_1_Type_Number^:S-1; 

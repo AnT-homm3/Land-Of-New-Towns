@@ -199,7 +199,7 @@ Dracolich
 Wood dweller
 Treefolk Wizard
 Magician
-Giant Ent
+Great Old Ent
 Ancient Ent
 Forest Bird
 Loogan
@@ -403,10 +403,10 @@ Blank Monster #398
 Blank Monster #399
 Mythical harpy jr.
 Mythical harpy
-Big centaur
-Mythical Centaur
-Mistress of Snakes
-Medusa Gorgon
+Ñentaur archer jr.
+Centaur - Archers
+Pegasus jr.
+Mythical Pegasus
 Cyclop the Cannibal
 Cyclops Leader
 Big Minotaur
@@ -442,7 +442,7 @@ Monks of Light
 Cavalry Crusader
 Champion Crusader
 Fearless Knight
-Great Knigt
+Great Knight
 Blank Monster #442
 Blank Monster #443
 Blank Monster #444
@@ -452,13 +452,13 @@ Dark Angel
 Legendary Sand Worm
 Upg. Golden Golem
 Blank Monster #450
-Blank Monster #451
+Poisonous Vivern
 Sky genie
 Grandmaster gremlin
 Gnoll Shaman
 King of Vasilisks
-Advanced Chaos Hydra
-Blank Monster #457
+Red Chaos Hydra
+Sunrise Phoenix
 Lava elemental
 Dendroid Leader
 Blank Monster #460
@@ -474,7 +474,7 @@ Blank Monster #469
 Blank Monster #470
 Blank Monster #471
 Blank Monster #472
-Blank Monster #473
+Owner of the swamp
 Snow Centaurid jr.
 Snow Centauride
 snow boar jr.
@@ -579,7 +579,7 @@ Blank Monster #574
 Blank Monster #575
 Colorful Coatl
 Prime Leader
-Blank Monster #578
+Swamp Keeper
 Walking Plant jr.
 Walking Plant
 Treebeard jr.
@@ -604,26 +604,26 @@ Fire Ifrit
 The Great Stone Giant
 Green Behemoth
 Metamorph
-Blank Monster #603
-Blank Monster #604
-Blank Monster #605
-Blank Monster #606
+Red Ayssid
+Golden Nix-Warrior
+Golden Haspid
+Royal Paladin
 Blank Monster #607
 Blank Monster #608
 Blank Monster #609
 Blank Monster #610
 Blank Monster #611
-Blank Monster #612
-Blank Monster #613
+Nightmare Knight
+Dark Shadow Dragon
 Blank Monster #614
-Blank Monster #615
-Blank Monster #616
-Blank Monster #617
+Great Mythic Ñentaur
+Monstrous Troglodite
+Meduza empress
 Blank Monster #618
-Blank Monster #619
-Blank Monster #620
-Blank Monster #621
-Blank Monster #622
+Adv. Armored Knight
+RollerCyborg jr.
+RollerCyborg
+Advanced Mech Gryphon
 Blank Monster #623
 Blank Monster #624
 Blank Monster #625

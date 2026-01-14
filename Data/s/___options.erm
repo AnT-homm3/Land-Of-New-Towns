@@ -1,14 +1,13 @@
 ZVSE
-
- ; settings for Land of New Towns
-
-
+ ; options for Land of New Towns mod 
  
 
- ; show the dialog for choosing the starting town for player 1...8 (human or Ai)
- ; this setting should be useful for multiplayer
- ; S1 - for player 1  /  S2 - for players 1,2  /  S3 - for players 1,2,3  / and so on
- ; for example for two players line should be:    !#VRv4086:S2;
+ ; This parameter enables the "Choose Starting Town" dialog for players 1 through 8. 
+ ; It is recommended for Hotseat and Multiplayer modes. Options:
+ ; S1 – for Player 1: Displays the town selection dialog for Player 1 (Red).
+ ; S2 - same for Player 1 and Player 2
+ ; S3 - same for Player 1, Player 2, Player 3.  etc...
+ ; For example, for two players, the line should be:     !#VRv4086:S2;
 
 !#VRv4086:S1;	
 
@@ -17,36 +16,37 @@ ZVSE
 
 
 
- ; enable or disable towns types when generating a map ("S1"-enable / "S0"-disable town)
- ; S0 means this type of town will not be generated
-
-!#VRi^t01_Wond^:S1;			WonderWoods
-!#VRi^t02_Eldo^:S1;			Eldorado
-!#VRi^t03_Sand^:S1;			Sand town
-!#VRi^t04_Shad^:S1;			Shadow town
-!#VRi^t05_Neut^:S1;			Neutral town
-!#VRi^t06_Magi^:S1;			Magic forest
-!#VRi^t08_Drui^:S1;			Druid town
-!#VRi^t10_Bast^:S1;			Bastion
-!#VRi^t13_Cove^:S1;			Cove
-!#VRi^t16_Myth^:S1;			Mythology
-!#VRi^t17_Tech^:S1;			Techno town
-!#VRi^t18_Temp^:S1;			Knight's Temple		
-!#VRi^t20_Icec^:S1;			Ice Castle
-!#VRi^t21_Elem^:S1;			Elemental Palace
-!#VRi^t24_Pyra^:S1;			Pyramid
-
-
-
-
-
-
-
- ; S0 -the map generates all new types of towns without restrictions
- ; S1 -each classic town type (Castle, Rampart...) is replaced by new town type (Knight's Castle, WonderWoods ...) or classic town type
- ; S2 -each classic town type (Castle, Rampart...) is replaced by only one new town type (Knight's Castle, WonderWoods ...)
- ; S3 -each classic town type (Castle, Rampart...) is replaced by only one new town type (Knight's Castle, WonderWoods ...) + classic town type become same as the start town 
- ; R3 -random setting S0 ... S3
- ; recommended setting: "S0" or "S3"
+ ; This parameter enables or disables the generation of towns.
+ ; use this toggle to include or exclude towns from the generation process (S1-enable town / S0-disable)
  
-!#VRi^one_type_of_new_town^:S0;	 
+!#VRi^t01_Wond^:S1;		Wonder Woods
+!#VRi^t02_Eldo^:S1;		Eldorado
+!#VRi^t03_Sand^:S1;		Sand town
+!#VRi^t04_Shad^:S1;		Shadow town
+!#VRi^t05_Neut^:S1;		Neutral town
+!#VRi^t06_Magi^:S1;		Magic Woods
+!#VRi^t08_Drui^:S1;		Druids town
+!#VRi^t10_Bast^:S1;		Bastion
+!#VRi^t13_Cove^:S1;		Cove
+!#VRi^t16_Myth^:S1;		Mythology
+!#VRi^t17_Tech^:S1;		Techno town
+!#VRi^t18_Temp^:S1;		Knights Castle			
+!#VRi^t20_Icec^:S1;		Ice Castle
+!#VRi^t21_Elem^:S1;		Elemental Palace
+!#VRi^t24_Pyra^:S1;		Pyramid
+
+
+
+
+
+
+ ; This option allows you to select different town generation modes: 
+ ; S0 - all new towns are generated randomly on the map; 
+ ; S1 - each town can be either a standard Heroes 3 town or a new one; 
+ ; S2 - each standard town type (Castle, Rampart...Conflux) can be replaced by only one specific new town type; 
+ ; S3 - same as above, but considering the starting town; 
+ ; R3 - a combination of all these parameters
+
+!#VRi^one_type_of_new_town^:R3;
+
+

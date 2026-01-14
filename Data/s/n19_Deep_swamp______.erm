@@ -1,0 +1,88 @@
+ZVSE
+
+
+ ; Mystic town - based on Fortress
+
+	
+-------------------------------------------------------------------	
+	
+!?FU(deepswamp___town); 					
+
+-----------------------------
+ ; replace town screen
+ ----------------------------
+
+ 
+!----!IF:M^adasda^;
+
+!-!SN:R^TBFRBACK.pcx^/^DeepSwamp.pcx^;
+!!SN:R^TBFRBACK.pcx^/^TBswBACK.pcx^;
+!!SN:R^FortressTown.mp3^/^DeepSwamp.mp3^;
+
+
+
+
+!!SN:R^TPCASFOR.pcx^/^^;		background for monsters avatars
+!!SN:R^TBFREXT2.def^/^^;
+!!SN:R^TBFREXT1.def^/^^;
+!!SN:R^TBFRUP_0.def^/^^;
+!!SN:R^TBFrup_5.def^/^^;
+!!SN:R^TBFRCSTL.def^/^TBswCSTL.def^;
+!!SN:R^TBFRCAS2.def^/^TBswCSTL.def^;
+!!SN:R^TBFRCAS3.def^/^TBswCSTL.def^;
+!!SN:R^TBFRDW_3.def^/^^;
+!!SN:R^TBFRUP_3.def^/^^;
+!!SN:R^TBFRDW_1.def^/^^;
+!!SN:R^TBFRUP_1.def^/^^;
+!!SN:R^TBFRdw_2.def^/^^;
+!!SN:R^TBFRUP_2.def^/^^;
+!!SN:R^TBFrhal2.def^/^^;
+!!SN:R^TBFrhal3.def^/^^;
+!!SN:R^TBFrhal4.def^/^^;
+!!SN:R^TBFREXT0.def^/^^;
+!!SN:R^TBFRMAG2.def^/^^;
+!!SN:R^TBFRMAG3.def^/^^;
+!!SN:R^TBFRMAGE.def^/^^;
+
+
+!!SN:R^TBFREXT2.def^/^TBFREXT22.def^;
+
+
+
+
+
+-----------------------------
+ ;  replace creatures
+-----------------------------
+	
+	!!FU(deepswamp___monsters):P;
+
+
+
+
+
+!!FU(deepswamp___town):E;  end function 
+
+
+
+
+
+---------------------------
+!?FU(deepswamp___monsters);
+
+!!UN:T7/0/0/462;
+!!UN:T7/0/1/463;
+!!UN:T7/1/0/464;
+!!UN:T7/1/1/465;
+!!UN:T7/2/0/466;
+!!UN:T7/2/1/467;	bolotnik
+!!UN:T7/3/0/139;
+!!UN:T7/3/1/452;
+!!UN:T7/4/0/470;
+!!UN:T7/4/1/471;	swamp witch
+!!UN:T7/5/0/472;
+!!UN:T7/5/1/473;
+!!UN:T7/6/0/474;
+!!UN:T7/6/1/475;
+
+!!FU(deepswamp___monsters):E;

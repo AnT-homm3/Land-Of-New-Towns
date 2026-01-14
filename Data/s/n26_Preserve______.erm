@@ -1,0 +1,264 @@
+ZVSE
+
+
+ ; Preserve - based on Rampart 
+
+	
+-------------------------------------------------------------------	
+	
+	
+	
+!?FU(preserve___town); 					
+
+-----------------------------
+ ; new coordinates of town dwellings
+ ----------------------------
+
+!!FU(SetBuilding'sPosition):P1/0/0/0;
+!!FU(SetBuilding'sPosition):P1/1/0/0;
+!!FU(SetBuilding'sPosition):P1/2/0/0;
+!!FU(SetBuilding'sPosition):P1/3/0/0;
+!!FU(SetBuilding'sPosition):P1/4/0/0;
+!!FU(SetBuilding'sPosition):P1/5/0/0;
+!!FU(SetBuilding'sPosition):P1/7/0/0;
+!!FU(SetBuilding'sPosition):P1/8/0/0;   
+!!FU(SetBuilding'sPosition):P1/9/0/0;
+!!FU(SetBuilding'sPosition):P1/10/0/0;
+!!FU(SetBuilding'sPosition):P1/11/0/0;
+!!FU(SetBuilding'sPosition):P1/12/0/0;
+!!FU(SetBuilding'sPosition):P1/13/0/0;			13/141/96;
+!!FU(SetBuilding'sPosition):P1/14/0/0;		market
+!!FU(SetBuilding'sPosition):P1/15/0/0;
+!!FU(SetBuilding'sPosition):P1/16/0/0;
+!-!FU(SetBuilding'sPosition):P1/17/414/138;
+!-!FU(SetBuilding'sPosition):P1/18/575/258;
+!-!FU(SetBuilding'sPosition):P1/19/575/257;
+!-!FU(SetBuilding'sPosition):P1/21/369/191;		549/196;
+!-!FU(SetBuilding'sPosition):P1/22/549/196;    dvor ballist 369/191;		
+!-!FU(SetBuilding'sPosition):P1/23/339/191; 		23/369/191;
+!-!FU(SetBuilding'sPosition):P1/26/0/0;
+!-!FU(SetBuilding'sPosition):P1/27/0/0;			water line in bastion
+!!FU(SetBuilding'sPosition):P1/30/0/0;
+!-!FU(SetBuilding'sPosition):P1/31/0/94;
+!!FU(SetBuilding'sPosition):P1/32/0/0;
+!!FU(SetBuilding'sPosition):P1/33/0/0;
+!-!FU(SetBuilding'sPosition):P1/34/639/251;
+!!FU(SetBuilding'sPosition):P1/35/0/0;
+!!FU(SetBuilding'sPosition):P1/36/0/0;
+!!FU(SetBuilding'sPosition):P1/37/0/0;			level 1 upg
+!-!FU(SetBuilding'sPosition):P1/38/0/91;
+!!FU(SetBuilding'sPosition):P1/39/0/0;
+!!FU(SetBuilding'sPosition):P1/40/0/0;
+!-!FU(SetBuilding'sPosition):P1/41/639/251;
+!!FU(SetBuilding'sPosition):P1/42/0/0;
+!!FU(SetBuilding'sPosition):P1/43/0/0;
+
+-----------------------------
+ ; replace town screen
+ ----------------------------
+ 
+!!SN:R^TBRMBACK.pcx^/^TBPRBACK.pcx^;
+!!SN:R^Rampart.mp3^/^Preserve.mp3^;
+ 
+
+!-!SN:R^TBrmdw_0.def^/^TBPRdw_0.def^;
+!-!SN:R^TBrmup_0.def^/^TBPRup_0.def^;
+!-!SN:R^TBRMcstl.def^/^TBPRCSTL.def^;
+ -
+ -
+ -
+ -
+!-!SN:R^TOrmCstl.pcx^/^TOprCstl.pcx^;
+!-!SN:R^TOrmdw_0.pcx^/^TOPRdw_0.pcx^;
+!-!SN:R^TOrmup_0.pcx^/^TOPRup_0.pcx^;
+ -
+!-!SN:R^TZrmCas2.pcx^/^TZprCas2.pcx^;
+!-!SN:R^TZrmCas3.pcx^/^TZprCas3.pcx^;
+!-!SN:R^TZrmCstl.pcx^/^TZprCstl.pcx^;
+!-!SN:R^TOrmdw_0.pcx^/^TZPRdw_0.pcx^;
+!-!SN:R^TOrmup_0.pcx^/^TZPRup_0.pcx^;
+ -
+ -
+!-!SN:R^TORCAS1.pcx^/^TOprCstl.pcx^;
+!-!SN:R^TORCAS2.pcx^/^TORCAS2n.pcx^;
+!-!SN:R^TORCAS3.pcx^/^TORCAS3n.pcx^;
+ -
+!-!SN:R^TZRCAS1.pcx^/^TZprCstl.pcx^;
+!-!SN:R^TZRCAS2.pcx^/^TZRCAS2n.pcx^;
+!-!SN:R^TZRCAS3.pcx^/^TZRCAS3n.pcx^;
+
+
+; Rampart
+
+
+!!SN:R^CRBKGRAM.pcx^/^^;
+!!SN:R^HALLRAMP.def^/^^;
+!-!SN:R^SgRmBack.pcx^/^^;
+!-!SN:R^TBRMBACK.pcx^/^^;
+!!SN:R^TBRMBLAK.def^/^TBPRBLAK.def^;
+!!SN:R^TBRMCAS2.def^/^TBPRCas2.def^;
+!!SN:R^TBRMCAS3.def^/^TBPRCas3.def^;
+!!SN:R^TBRMCSTL.def^/^TBPRCSTL.def^;
+!!SN:R^TBRMDW_0.def^/^TBPRdw_0.def^;
+!!SN:R^TBRMDW_1.def^/^^;
+!!SN:R^TBRMDW_2.def^/^TBPRdw_2.def^;
+!!SN:R^TBRMDW_3.def^/^TBPRdw_3.def^;
+!!SN:R^TBRMDW_4.def^/^^;
+!!SN:R^TBRMDW_5.def^/^TBPRdw_5.def^;
+!!SN:R^TBRMDW_6.def^/^TBPRdw_6.def^;
+!-!SN:R^TBRMEXT0.def^/^TBPREXT1.def^;
+!-!SN:R^TBRMEXT1.def^/^TBPREXT2.def^;
+!!SN:R^TBRMEXT2.def^/^TBRMEXT2p.def^;
+!!SN:R^TBRMEXT3.def^/^TBRMEXT3p.def^;
+!!SN:R^TBRMEXT4.def^/^TBRMEXT4p.def^;
+!!SN:R^TBRMEXT5.def^/^TBRMEXT5p.def^;
+!!SN:R^TBRMHAL2.def^/^TBPRhal2.def^;
+!!SN:R^TBRMHAL3.def^/^TBPRhal3.def^;
+!!SN:R^TBRMHAL4.def^/^TBPRhal4.def^;
+!!SN:R^TBRMHALL.def^/^TBPRhall.def^;
+!!SN:R^TBRMHOLY.def^/^^;
+!!SN:R^TBRMHRD1.def^/^^;
+!!SN:R^TBRMHRD2.def^/^^;
+!!SN:R^TBRMHRD3.def^/^^;
+!!SN:R^TBRMHRD4.def^/^^;
+!!SN:R^TBRMMAG2.def^/^TBPRmag2.def^;
+!!SN:R^TBRMMAG3.def^/^TBPRmag3.def^;
+!!SN:R^TBRMMAG4.def^/^TBPRmag4.def^;
+!!SN:R^TBRMMAG5.def^/^TBPRmag5.def^;
+!!SN:R^TBRMMAGE.def^/^TBPRmage.def^;
+!!SN:R^TBRMMARK.def^/^TBPRMARK.def^;
+!!SN:R^TBRMSILO.def^/^TBPRSILO.def^;
+!!SN:R^TBRMSPEC.def^/^^;
+!!SN:R^TBRMTVRN.def^/^TBPRTVRN.def^;
+!!SN:R^TBRMUP_0.def^/^TBPRdw_0.def^;
+!!SN:R^TBRMUP_1.def^/^^;
+!!SN:R^TBRMUP_2.def^/^TBPRup_2.def^;
+!!SN:R^TBRMUP_3.def^/^TBPRup_3.def^;
+!!SN:R^TBRMUP_4.def^/^^;
+!!SN:R^TBRMUP_5.def^/^TBPRup_5.def^;
+!!SN:R^TBRMUP_6.def^/^TBPRup_6.def^;
+
+!!SN:R^TORAID.pcx^/^TOPRBLAK.pcx^;
+!!SN:R^TORCAS1.pcx^/^TOprCstl.pcx^;
+!!SN:R^TORCAS2.pcx^/^TOPRCAS2.pcx^;
+!!SN:R^TORCAS3.pcx^/^TOPRCAS3.pcx^;
+!!SN:R^TORCEN1A.pcx^/^TOPRdw_0.pcx^;
+!!SN:R^TORCEN2A.pcx^/^TOPRup_0.pcx^;
+!!SN:R^TORDR1AA.pcx^/^TOPRdw_6.pcx^;
+!!SN:R^TORDR2AA.pcx^/^TOPRup_6.pcx^;
+!!SN:R^TORDWF1.pcx^/^^;
+!!SN:R^TORDWF1H.pcx^/^^;
+!!SN:R^TORDWF2.pcx^/^^;
+!!SN:R^TORDWF2H.pcx^/^^;
+!!SN:R^TORDWFT.pcx^/^^;
+!!SN:R^TORELF1.pcx^/^TOPRdw_2.pcx^;
+!!SN:R^TORELF2.pcx^/^TOPRup_2.pcx^;
+!!SN:R^TORGAR1A.pcx^/^^;
+!!SN:R^TORGAR2A.pcx^/^^;
+!!SN:R^TORHAL1.pcx^/^TOPRhall.pcx^;
+!!SN:R^TORHAL2.pcx^/^TOPRhal2.pcx^;
+!!SN:R^TORHAL3.pcx^/^TOPRhal3.pcx^;
+!!SN:R^TORHAL4.pcx^/^TOPRhal4.pcx^;
+!!SN:R^TORHOLY.pcx^/^^;
+!!SN:R^TORMAG1.pcx^/^TOPRmage.pcx^;
+!!SN:R^TORMAG2.pcx^/^TOPRmag2.pcx^;
+!!SN:R^TORMAG3.pcx^/^TOPRmag3.pcx^;
+!!SN:R^TORMAG4.pcx^/^TOPRmag4.pcx^;
+!!SN:R^TORMAG5.pcx^/^TOPRmag5.pcx^;
+!!SN:R^TORMRK1.pcx^/^TOPRMARK.pcx^;
+!!SN:R^TORMRK2.pcx^/^TOPRsilo.pcx^;
+!!SN:R^TORPEG1A.pcx^/^TOPRdw_3.pcx^;
+!!SN:R^TORPEG2A.pcx^/^TOPRup_3.pcx^;
+!!SN:R^TORTAV.pcx^/^TOPRTVRN.pcx^;
+!!SN:R^TORTRE1.pcx^/^^;
+!!SN:R^TORTRE1H.pcx^/^^;
+!!SN:R^TORTRE2.pcx^/^^;
+!!SN:R^TORTRE2H.pcx^/^^;
+!!SN:R^TORUNI1.pcx^/^TOPRdw_5.pcx^;
+!!SN:R^TORUNI2.pcx^/^TOPRup_5.pcx^;
+!!SN:R^TPCASRAM.pcx^/^^;
+!!SN:R^TPMAGERM.pcx^/^^;
+
+!!SN:R^TZRAID.pcx^/^TZPRBLAK.pcx^;
+!!SN:R^TZRCAS1.pcx^/^TZprCstl.pcx^;
+!!SN:R^TZRCAS2.pcx^/^TZPRCAS2.pcx^;
+!!SN:R^TZRCAS3.pcx^/^TZPRCAS3.pcx^;
+!!SN:R^TZRCEN1A.pcx^/^TZPRdw_0.pcx^;
+!!SN:R^TZRCEN2A.pcx^/^TZPRdw_0.pcx^;
+!!SN:R^TZRDR1AA.pcx^/^TZPRdw_6.pcx^;
+!!SN:R^TZRDR2AA.pcx^/^TZPRup_6.pcx^;
+!!SN:R^TZRDWF1.pcx^/^^;
+!!SN:R^TZRDWF1H.pcx^/^^;
+!!SN:R^TZRDWF2.pcx^/^^;
+!!SN:R^TZRDWF2H.pcx^/^^;
+!!SN:R^TZRDWFT.pcx^/^^;
+!!SN:R^TZRELF1.pcx^/^TZPRdw_2.pcx^;
+!!SN:R^TZRELF2.pcx^/^TZPRup_2.pcx^;
+!!SN:R^TZRGAR1A.pcx^/^^;
+!!SN:R^TZRGAR2A.pcx^/^^;
+!!SN:R^TZRHAL1.pcx^/^TZPRhall.pcx^;
+!!SN:R^TZRHAL2.pcx^/^TZPRhal2.pcx^;
+!!SN:R^TZRHAL3.pcx^/^TZPRhal3.pcx^;
+!!SN:R^TZRHAL4.pcx^/^TZPRhal4.pcx^;
+!!SN:R^TZRHOLY.pcx^/^^;
+!!SN:R^TZRMAG1.pcx^/^TZPRmage.pcx^;
+!!SN:R^TZRMAG2.pcx^/^TZPRmag2.pcx^;
+!!SN:R^TZRMAG3.pcx^/^TZPRmag3.pcx^;
+!!SN:R^TZRMAG4.pcx^/^TZPRmag4.pcx^;
+!!SN:R^TZRMAG5.pcx^/^TZPRmag5.pcx^;
+!!SN:R^TZRMRK1.pcx^/^TZPRMARK.pcx^;
+!!SN:R^TZRMRK2.pcx^/^TZPRSilo.pcx^;
+!!SN:R^TZRPEG1A.pcx^/^TZPRdw_3.pcx^;
+!!SN:R^TZRPEG2A.pcx^/^TZPRup_3.pcx^;
+!!SN:R^TZRTAV.pcx^/^TZPRTVRN.pcx^;
+!!SN:R^TZRTRE1.pcx^/^^;
+!!SN:R^TZRTRE1H.pcx^/^^;
+!!SN:R^TZRTRE2.pcx^/^^;
+!!SN:R^TZRTRE2H.pcx^/^^;
+!!SN:R^TZRUNI1.pcx^/^TZPRdw_5.pcx^;
+!!SN:R^TZRUNI2.pcx^/^TZPRup_5.pcx^;
+
+ 
+ 
+
+ 
+
+ 
+ -----------------------------
+ ; replace creatures
+-----------------------------
+
+!!FU(preserve___monsters):P;
+
+
+!!FU(preserve___town):E;  end function
+
+
+
+----------------------------------------------
+
+!?FU(preserve___monsters);
+
+!!UN:T1/0/0/138;
+!!UN:T1/0/1/253;
+!!UN:T1/1/0/284;	black ravens
+!!UN:T1/1/1/285;
+!!UN:T1/2/0/139;
+!!UN:T1/2/1/566;
+!!UN:T1/3/0/569;
+!!UN:T1/3/1/570;
+!!UN:T1/4/0/571;
+!!UN:T1/4/1/572;
+!!UN:T1/5/0/294;	Indriks
+!!UN:T1/5/1/295;
+!!UN:T1/6/0/575;	
+!!UN:T1/6/1/576;
+
+!!FU(preserve___monsters):E;
+
+
+
+--------------------------------------------------
+
+
+

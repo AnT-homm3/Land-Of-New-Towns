@@ -1,0 +1,107 @@
+ZVSE
+
+
+ ; Strange Cult town - based on Dungeon
+
+	
+-------------------------------------------------------------------	
+	
+	
+	
+!?FU(strange_cult___town); 					
+
+
+-----------------------------
+ ; replace town screen
+ ----------------------------
+ 
+!!FU(Restore_Default_TownScreen):P;
+ 
+!!SN:R^TBDNBACK.pcx^/^tbCUback.pcx^;		tbdnback2.pcx
+!!SN:R^DUNGEON.MP3^/^StrangeCult.mp3^;	
+
+
+!!SN:R^TBDNBlak.def^/^^;
+!!SN:R^TBDNCas2.def^/^TBcuCas3.def^;
+!!SN:R^TBDNCas3.def^/^TBcuCas3.def^;
+!!SN:R^TBDNCstl.def^/^TBcuCstl.def^;
+!!SN:R^TBDNDw_0.def^/^^;
+!!SN:R^TBDNDw_1.def^/^TBcuUp_1.def^;
+!!SN:R^TBDNDw_2.def^/^TBcuUp_2.def^;
+!!SN:R^TBDNDw_3.def^/^TBcuUp_3.def^;
+!!SN:R^TBDNDw_4.def^/^TBcuUp_4.def^;
+!!SN:R^TBDNDw_5.def^/^TBcuUp_5.def^;
+!!SN:R^TBDNDw_6.def^/^TBcuUp_6.def^;
+!!SN:R^TBDNExt0.def^/^^;
+!!SN:R^TBDNExt1.def^/^TBcuExt1.def^;
+!!SN:R^TBDNExt2.def^/^TBcuExt2.def^;
+!!SN:R^TBDNHal2.def^/^TBcuHal4.def^;
+!!SN:R^TBDNHal3.def^/^TBcuHal4.def^;
+!!SN:R^TBDNHal4.def^/^TBcuHal4.def^;
+!!SN:R^TBDNHall.def^/^TBcuHal4.def^;
+!!SN:R^TBDNHoly.def^/^^;
+!!SN:R^TBDNHrd1.def^/^^;
+!!SN:R^TBDNHrd2.def^/^^;
+!!SN:R^TBDNMag2.def^/^TBcuMag5.def^;
+!!SN:R^TBDNMag3.def^/^TBcuMag5.def^;
+!!SN:R^TBDNMag4.def^/^TBcuMag5.def^;
+!!SN:R^TBDNMag5.def^/^TBcuMag5.def^;
+!!SN:R^TBDNMage.def^/^TBcuMag5.def^;
+!!SN:R^TBDNMark.def^/^^;
+!!SN:R^TBDNSilo.def^/^^;
+!!SN:R^TBDNSpec.def^/^^;
+!!SN:R^TBDNTvrn.def^/^^;
+!!SN:R^TBDNUp_0.def^/^^;
+!!SN:R^TBDNUp_1.def^/^TBcuUp_1.def^;
+!!SN:R^TBDNUp_2.def^/^TBcuUp_2.def^;
+!!SN:R^TBDNUp_3.def^/^TBcuUp_3.def^;
+!!SN:R^TBDNUp_4.def^/^TBcuUp_4.def^;
+!!SN:R^TBDNUp_5.def^/^TBcuUp_5.def^;
+!!SN:R^TBDNUp_6.def^/^TBcuUp_6.def^;
+
+
+!!SN:R^TODHAR1.pcx^/^TOuHAR2.pcx^;
+!!SN:R^TODHAR2.pcx^/^TOuHAR2.pcx^;
+
+!!SN:R^TZDHAR1.pcx^/^TZuHAR2.pcx^;
+!!SN:R^TZDHAR2.pcx^/^TZuHAR2.pcx^;
+
+
+
+ 
+ 
+ 
+ -----------------------------
+ ; replace creatures
+-----------------------------
+
+	!!FU(strange_cult___monsters):P;
+
+
+
+
+
+ !!FU(strange_cult___town):E;  end function
+ 
+ 
+ 
+ 
+ --------------------------
+!?FU(strange_cult___monsters);
+ 
+!!UN:T5/0/0/331;	
+!!UN:T5/0/1/332;
+!!UN:T5/1/0/333;	
+!!UN:T5/1/1/334;
+!!UN:T5/2/0/335;	
+!!UN:T5/2/1/336;
+!!UN:T5/3/0/337;	
+!!UN:T5/3/1/338;
+!!UN:T5/4/0/339;
+!!UN:T5/4/1/340;
+!!UN:T5/5/0/341;
+!!UN:T5/5/1/342;
+!!UN:T5/6/0/343;
+!!UN:T5/6/1/344;
+
+!!FU(strange_cult___monsters):E;

@@ -1,0 +1,248 @@
+ZVSE
+
+
+ ; Abandoned Pyramid - based on Necropolis
+
+	
+-------------------------------------------------------------------	
+	
+!?FU(abandonedpyramid___town); 					
+
+-----------------------------
+ ;  replace town screen
+----------------------------
+
+	 ; new upgrade
+	!!MA:U56/521;		Upg skeleton to skeleton of pyramid
+ 
+ 
+ 
+!!SN:R^tbncback.pcx^/^tbAPback.pcx^;
+!!SN:R^necroTown.mp3^/^AbandonedPyramid.mp3^;
+
+
+!!SN:R^TBNCEXT2.def^/^TBapEXT2.def^;		ground on bottom		
+!!SN:R^TBNCEXT3.def^/^TBapEXT3.def^;
+
+!-!SN:R^TPCASNEC.pcx^/^TPCASice.pcx^;
+!-!SN:R^TPMAGENC.pcx^/^TPMAGEic.pcx^;
+!-!SN:R^itpt.def^/^itpt_v1.def^;				town left avatar var1
+ -
+!-!SN:R^HALLNECR.def^/^HALLicec.def^;
+ -
+ -
+!-!SN:R^TBNCBLAK.def^/^ice-spec2.def^; 	ice-holes.def^;	ice-smith.def^;
+!--!SN:R^TBNCBOAT.def^/^
+!-!SN:R^TBNCCAS2.def^/^ice-cas2.def^;
+!-!SN:R^TBNCCAS3.def^/^ice-cas3.def^;
+!-!SN:R^TBNCCSTL.def^/^ice-cas1.def^;
+!-!SN:R^TBNCDOCK.def^/^ice-dock.def^;
+!-!SN:R^TBNCDW_0.def^/^ice-dw4.def^;
+!-!SN:R^TBNCDW_1.def^/^ice-dw1.def^;
+!-!SN:R^TBNCDW_2.def^/^ice-spec3.def^;
+!-!SN:R^TBNCDW_3.def^/^ice-dw2.def^;	ice-dw2.def^;
+!-!SN:R^TBNCDW_4.def^/^ice-yeti1.def^;		ice-dw5.def^;
+!-!SN:R^TBNCDW_5.def^/^ice-dw3.def^;
+!-!SN:R^TBNCDW_6.def^/^ice-dw7.def^;
+!-!SN:R^TBNCEXT0.def^/^ice-snow2.def^;	ice-holes.def^;		//		increaser of magic
+!-!SN:R^TBNCEXT1.def^/^ice-snow2.def^;	ice-blank.def^;		//
+!-!SN:R^TBNCEXT2.def^/^ice-blank2.def^;		ground on bottom		// bug exit townscreen
+!-!SN:R^TBNCEXT3.def^/^ice-blank.def^;
+!-!SN:R^TBNCEXT4.def^/^ice-blank.def^;
+!-!SN:R^TBNCEXT5.def^/^ice-blank.def^;		//
+!-!SN:R^TBNCHAL2.def^/^ice-hall2.def^;
+!-!SN:R^TBNCHAL3.def^/^ice-hall3.def^;
+!-!SN:R^TBNCHAL4.def^/^ice-hall3.def^;
+!-!SN:R^TBNCHALL.def^/^ice-hall1.def^;
+!-!SN:R^TBNCHOLY.def^/^ice-grail.def^;
+!-!SN:R^TBNCHRD1.def^/^ice-dw1.def^;			horde 1 (level 1)
+!-!SN:R^TBNCHRD2.def^/^
+!-!SN:R^TBNCMAG2.def^/^ice-mg2.def^;
+!-!SN:R^TBNCMAG3.def^/^ice-mg3.def^;
+!-!SN:R^TBNCMAG4.def^/^ice-mg4.def^;
+!-!SN:R^TBNCMAG5.def^/^ice-mg4.def^;
+!-!SN:R^TBNCMAGE.def^/^ice-mg1.def^;
+!-!SN:R^TBNCMARK.def^/^ice-smith.def^;	ice-market.def^;
+!-!SN:R^TBNCSILO.def^/^ice-dw5u.def^;	ice-smith.def^;
+!--!SN:R^TBNCSPEC.def^/^
+!-!SN:R^TBNCTVRN.def^/^ice-tavern.def^;
+!-!SN:R^TBNCUP_0.def^/^ice-dw4u.def^;
+!-!SN:R^TBNCUP_1.def^/^ice-dw1.def^;
+!-!SN:R^TBNCUP_2.def^/^ice-spec3.def^;
+!-!SN:R^TBNCUP_3.def^/^ice-dw2u.def^;	ice-dw2u.def^;
+!-!SN:R^TBNCUP_4.def^/^ice-yeti2.def^;	ice-dw5u.def^;
+!-!SN:R^TBNCUP_5.def^/^ice-dw3.def^;
+!-!SN:R^TBNCUP_6.def^/^ice-dw7u.def^;
+
+
+!!SN:R^TBNCBLAK.def^/^^;
+!!SN:R^TBNCBOAT.def^/^^;
+!!SN:R^TBNCCAS2.def^/^TBapCAS3.def^;
+!!SN:R^TBNCCAS3.def^/^TBapCAS3.def^;
+!!SN:R^TBNCCSTL.def^/^TBapCAS3.def^;
+!!SN:R^TBNCDOCK.def^/^^;
+!!SN:R^TBNCDW_0.def^/^TBapUP_0.def^;
+!!SN:R^TBNCDW_1.def^/^TBapUP_1.def^;
+!!SN:R^TBNCDW_2.def^/^TBapUP_2.def^;
+!!SN:R^TBNCDW_3.def^/^TBapUP_3.def^;
+!!SN:R^TBNCDW_4.def^/^TBapUP_4.def^;		
+!!SN:R^TBNCDW_5.def^/^TBapUP_5.def^;
+!!SN:R^TBNCDW_6.def^/^TBapUP_6.def^;
+!!SN:R^TBNCEXT0.def^/^TBapEXT0.def^;		//
+!!SN:R^TBNCEXT1.def^/^^;		//
+!!SN:R^TBNCEXT2.def^/^TBapEXT2.def^;		ground on bottom
+!!SN:R^TBNCEXT3.def^/^TBapEXT3.def^;
+!!SN:R^TBNCEXT4.def^/^^;
+!!SN:R^TBNCEXT5.def^/^^;		//
+!!SN:R^TBNCHAL2.def^/^TBapHAL4.def^;
+!!SN:R^TBNCHAL3.def^/^TBapHAL4.def^;
+!!SN:R^TBNCHAL4.def^/^TBapHAL4.def^;
+!!SN:R^TBNCHALL.def^/^TBapHAL4.def^;
+!!SN:R^TBNCHOLY.def^/^^;
+!!SN:R^TBNCHRD1.def^/^^;			horde 1 (level 1)
+!!SN:R^TBNCHRD2.def^/^^;
+!!SN:R^TBNCMAG2.def^/^TBapMAG5.def^;
+!!SN:R^TBNCMAG3.def^/^TBapMAG5.def^;
+!!SN:R^TBNCMAG4.def^/^TBapMAG5.def^;
+!!SN:R^TBNCMAG5.def^/^TBapMAG5.def^;
+!!SN:R^TBNCMAGE.def^/^TBapMAG5.def^;
+!!SN:R^TBNCMARK.def^/^TBapMARK.def^;				market
+!!SN:R^TBNCSILO.def^/^^;
+!!SN:R^TBNCSPEC.def^/^TBapSPEC.def^;
+!!SN:R^TBNCTVRN.def^/^TBapTVRN.def^;
+!!SN:R^TBNCUP_0.def^/^TBapUP_0.def^;
+!!SN:R^TBNCUP_1.def^/^TBapUP_1.def^;
+!!SN:R^TBNCUP_2.def^/^TBapUP_2.def^;
+!!SN:R^TBNCUP_3.def^/^TBapUP_3.def^;
+!!SN:R^TBNCUP_4.def^/^TBapUP_4.def^;	ice-dw5u.def^;
+!!SN:R^TBNCUP_5.def^/^TBapUP_5.def^;
+!!SN:R^TBNCUP_6.def^/^TBapUP_6.def^;
+
+ -
+!-!SN:R^TONBkn1.pcx^/^to-dw3b.pcx^;
+!-!SN:R^TOnbkn2.pcx^/^to-dw3b.pcx^;
+!-!SN:R^TONBon1.pcx^/^to-dw7b.pcx^;
+!-!SN:R^TONBon2.pcx^/^to-dw7b.pcx^;
+!-!SN:R^TONCas1.pcx^/^to-cas1b.pcx^;
+!-!SN:R^TONCas2.pcx^/^to-cas2b.pcx^;
+!-!SN:R^TONCas3.pcx^/^to-cas3b.pcx^;
+!-!SN:R^TONHal1.pcx^/^to-hall1b.pcx^;
+!-!SN:R^TONHal2.pcx^/^to-hall2b.pcx^;
+!-!SN:R^TONHal3.pcx^/^to-hall3b.pcx^;
+!-!SN:R^TONHal4.pcx^/^to-hall3b.pcx^;
+!-!SN:R^TONholya.pcx^/^to-grailb.pcx^;
+!-!SN:R^TONLich1.pcx^/^to-yeti1.pcx^;	to-dw5b.pcx^;			level 
+!-!SN:R^TONLich2.pcx^/^to-yeti1.pcx^;	^to-dw5ub.pcx^;
+!-!SN:R^TONMag1.pcx^/^to-mg1b.pcx^;
+!-!SN:R^TONMag2.pcx^/^to-mg2b.pcx^;
+!-!SN:R^TONMag3.pcx^/^to-mg3b.pcx^;
+!-!SN:R^TONMag4.pcx^/^to-mg4b.pcx^;
+!-!SN:R^TONMag5.pcx^/^to-mg4b.pcx^;
+!-!SN:R^TONMrk1.pcx^/^to-smithb.pcx^;		to-marketb.pcx^;
+!-!SN:R^TOnmrk2.pcx^/^to-dw5ub.pcx^;	to-marketb.pcx^;
+!-!SN:R^TOnnecra.pcx^/^to-holesb.pcx^;	//		increaser of magic
+!--!SN:R^TONshpBa.pcx
+!--!SN:R^TONshpNa.pcx
+!--!SN:R^TOnshrda.pcx
+!--!SN:R^TONSke1H.pcx^/^to-dw1b.pcx^;
+!--!SN:R^TONSke2H.pcx^/^to-dw1b.pcx^;
+!-!SN:R^TONSkel1.pcx^/^to-dw4b.pcx^;
+!-!SN:R^TONSkel2.pcx^/^to-dw4ub.pcx^;
+!-!SN:R^TONSkelT.pcx^/^to-holesb.pcx^;
+!-!SN:R^TONsmita.pcx^/^to-spec2b.pcx^;
+!-!SN:R^TONTav.pcx^/^to-tavernb.pcx^;
+!-!SN:R^TONVam1.pcx^/^to-dw2b.pcx^;
+!-!SN:R^TONVam2.pcx^/^to-dw2b.pcx^;
+!-!SN:R^TONwigh1.pcx^/^to-spec3b.pcx^;		level 3
+!-!SN:R^TONwigh2.pcx^/^to-spec3b.pcx^;
+!-!SN:R^TONzomb1.pcx^/^to-dw1b.pcx^; 	to-dw4b.pcx^;
+!-!SN:R^TONzomb2.pcx^/^to-dw1b.pcx^; 	to-dw4b.pcx^;
+ -
+!-!SN:R^TZNBKN1.pcx^/^tz-dw3a.pcx^;		level 6
+!-!SN:R^TZNBKN2.pcx^/^tz-dw3a.pcx^;
+!-!SN:R^TZNBON1.pcx^/^tz-dw7a.pcx^;
+!-!SN:R^TZNBON2.pcx^/^tz-dw7a.pcx^;
+!-!SN:R^TZNCAS1.pcx^/^tz-cas1a.pcx^;
+!-!SN:R^TZNCAS2.pcx^/^tz-cas2a.pcx^;
+!-!SN:R^TZNCAS3.pcx^/^tz-cas3a.pcx^;
+!-!SN:R^TZNHAL1.pcx^/^tz-hall1a.pcx^;
+!-!SN:R^TZNHAL2.pcx^/^tz-hall2a.pcx^;
+!-!SN:R^TZNHAL3.pcx^/^tz-hall3a.pcx^;
+!-!SN:R^TZNHAL4.pcx^/^tz-hall3a.pcx^;
+!-!SN:R^TZNHOLYA.pcx^/^tz-graila.pcx^;
+!-!SN:R^TZNLICH1.pcx^/^tz-yeti1.pcx^;	tz-dw5a.pcx^;
+!-!SN:R^TZNLICH2.pcx^/^tz-yeti1.pcx^;	^tz-dw5ua.pcx^;
+!-!SN:R^TZNMAG1.pcx^/^tz-mg1a.pcx^;
+!-!SN:R^TZNMAG2.pcx^/^tz-mg2a.pcx^;
+!-!SN:R^TZNMAG3.pcx^/^tz-mg3a.pcx^;
+!-!SN:R^TZNMAG4.pcx^/^tz-mg4a.pcx^;
+!-!SN:R^TZNMAG5.pcx^/^tz-mg4a.pcx^;
+!-!SN:R^TZNMRK1.pcx^/^tz-smitha.pcx^;	tz-marketa.pcx^;
+!-!SN:R^TZNMRK2.pcx^/^tz-dw5ua.pcx^;	^tz-marketa.pcx^;
+!-!SN:R^TZNNECRA.pcx^/^tz-holesa.pcx^;
+!--!SN:R^TZNSHPBA.pcx
+!--!SN:R^TZNSHPNA.pcx
+!--!SN:R^TZNSHRDA.pcx
+!--!SN:R^TZNSKE1H.pcx^/^tz-dw1a.pcx^;
+!--!SN:R^TZNSKE2H.pcx^/^tz-dw1a.pcx^;
+!-!SN:R^TZNSKEL1.pcx^/^tz-dw4a.pcx^;
+!-!SN:R^TZNSKEL2.pcx^/^tz-dw4ua.pcx^;
+!-!SN:R^TZNSKELT.pcx^/^tz-holesa.pcx^;
+!-!SN:R^TZNSMITA.pcx^/^tz-spec2a.pcx^;
+!-!SN:R^TZNTAV.pcx^/^tz-taverna.pcx^;
+!-!SN:R^TZNVAM1.pcx^/^tz-dw2a.pcx^;			level 4
+!-!SN:R^TZNVAM2.pcx^/^tz-dw2a.pcx^;
+!-!SN:R^TZNWIGH1.pcx^/^tz-spec3a.pcx^;			level 3
+!-!SN:R^TZNWIGH2.pcx^/^tz-spec3a.pcx^;
+!-!SN:R^TZNZOMB1.pcx^/^tz-dw1a.pcx^;
+!-!SN:R^TZNZOMB2.pcx^/^tz-dw1a.pcx^;
+
+
+
+ ; set building priority
+!-!FU(SetBuilding'sPriority):P4/32/7;	
+!-!FU(SetBuilding'sPriority):P4/33/8;	
+!-!FU(SetBuilding'sPriority):P4/34/9;
+ -
+!-!FU(SetBuilding'sPriority):P4/35/33;
+!-!FU(SetBuilding'sPriority):P4/36/41;
+
+	
+	!--#UN:C7734691/1/532;		like sorcesser
+
+	
+	; replace creatures
+	!!FU(abandonedpyramid___monsters):P;
+
+
+
+
+
+!!FU(abandonedpyramid___town):E;  end function 
+
+
+
+
+
+
+------------------------------------------------
+
+
+!?FU(abandonedpyramid___monsters);
+
+!!UN:T4/0/0/56;
+!!UN:T4/0/1/521; 
+!!UN:T4/1/0/522;	
+!!UN:T4/1/1/523;
+!!UN:T4/2/0/141;		mummy homm3
+!!UN:T4/2/1/525;	
+!!UN:T4/3/0/526;
+!!UN:T4/3/1/527;
+!!UN:T4/4/0/528;	
+!!UN:T4/4/1/529;	
+!!UN:T4/5/0/530;
+!!UN:T4/5/1/531;		
+!!UN:T4/6/0/532;
+!!UN:T4/6/1/533;
+
+!!FU(abandonedpyramid___monsters):E;

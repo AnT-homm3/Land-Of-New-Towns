@@ -1,0 +1,536 @@
+ZVSE2
+
+ ; variables used
+; v6000...v6700   			for 3upgrades dwelling build
+
+!!VRv4069:S0;				variable for dialog option
+!#VRi^def_upgrades^:S1;		toggle default upgrades / third upgrades  
+
+
+; ===============  3 upgrades price constants ===============
+!#DC(TU_1_GOLD)	= 7000;		
+!#DC(TU_1_MITH)	= 4;
+
+!#DC(TU_2_GOLD)	= 8000;		
+!#DC(TU_2_MITH)	= 5;
+
+!#DC(TU_3_GOLD)	= 10000;		
+!#DC(TU_3_MITH)	= 6;
+
+!#DC(TU_4_GOLD)	= 12000;		
+!#DC(TU_4_MITH)	= 8;
+
+!#DC(TU_5_GOLD)	= 15000;		
+!#DC(TU_5_MITH)	= 12;
+
+!#DC(TU_6_GOLD)	= 20000;		
+!#DC(TU_6_MITH)	= 15;	
+
+!#DC(TU_7_GOLD)	= 30000;		
+!#DC(TU_7_MITH)	= 23;	
+
+!#DC(TU_8_GOLD)	= 50000;		
+!#DC(TU_8_MITH)	= 30;	
+
+
+
+
+; ================  3 upgrades constants ====================
+
+!#DC(CSTL_5)	= 169;		War Zealot
+
+!#DC(RAMP_5)	= 461;		Ent leader
+!#DC(RAMP_8)	= 151;		Diamond Dragon
+
+!#DC(TOWR_1)	= 455;		Grandmaster Gremlins
+!#DC(TOWR_5)	= 454;		Sky genie 
+!#DC(TOWR_8)	= 152;		Lord of Thunder 
+
+
+!#DC(NECR_6)	= 614;		Nightmare Knight	
+!#DC(NECR_7)	= 615;		Dark Shadow Dragon
+
+!#DC(DUNG_1)	= 618;		Monstrous Troglodite
+!#DC(DUNG_4)	= 619;		Meduza Empress
+!#DC(DUNG_8)	= 155;		Darkness Dragon 
+
+!#DC(STRO_7)	= 603;		Green Behemoth   
+
+!#DC(FORT_1)	= 456;		Gnoll-shaman
+!#DC(FORT_4)	= 457;		King Vasilisk
+!#DC(FORT_6)	= 453;		Poisonous Vivern
+!#DC(FORT_7)	= 458;		Red Hydra
+
+!#DC(CONF_5)	= 460;		Lava Elemental	
+!#DC(CONF_7)	= 459;		Sunrise Phoenix
+
+!#DC(SAND_8)	= 450;		Legendary Sand Worm
+
+!#DC(SHAD_8)	= 444;		Great Ancient Spider
+
+!#DC(COVE_4)	= 605;		Red Assids	
+!#DC(COVE_6)	= 606;		Golden Nix-Warrior
+!#DC(COVE_8)	= 607;		Golden Haspid
+
+!#DC(KITE_1)	= 589;		Mohovik
+!#DC(KITE_5)	= 198;		advanced Treefolk Wizards
+!#DC(KITE_8)	= 577;		Volot
+
+!#DC(MYTH_5)	= 617;		Great Mythological Centaur
+
+!#DC(TECH_4)	= 624;		Adv. Mech Gryphon
+!#DC(TECH_8)	= 579;		Prime Leader
+
+!#DC(KNIG_4)	= 621;		Adv. Armored Knight
+!#DC(KNIG_8)	= 608;		Royal Paladin
+
+!#DC(SWAM_8)	= 580;		Swamp Keeper
+
+!#DC(PYRA_5)	= 451;		Upg. Golden Golem	
+!#DC(PYRA_6)	= 546;		Great Sphinx
+
+
+
+; ============================================================
+
+ ; enable/disable WOG options
+!?FU(OnAfterErmInstructions);
+!!UN:P036/1; 					[mithril]
+!!UN:P045/0; 					[town improve using mitril]
+
+!!UN:P020/0; 					[week of monsters]
+!!UN:P134/0; 					
+!!UN:P135/0; 
+!!UN:P136/0; 
+!!UN:P200/0; 
+
+!!FU(OnAfterErmInstructions):E;
+
+
+
+
+; =============================================================
+
+!?FU(OnTownMouseClick); 
+!!UN:P(WOG_OPT_CASTLE_UPGRADING)/?(wogOption:y);  
+
+; получение параметров клика
+!!CM:I?(itemId:y) F?(flags:y) S?(clickSubtype:y);
+!!FU|(flags)<>(NO_MOUSE_FLAGS)/(clickSubtype)<>(MOUSE_LMB_PRESSED):E;
+
+; получение необходимых параметров города
+!!CA(CURRENT_TOWN):O?(ownerId:y) U?(townId:y) T?(townType:y);
+
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P0/0/0/0/0/0/(CSTL_5)/0/0/0;						castle
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P1/0/0/0/0/0/(RAMP_5)/0/0/(RAMP_8);				rampart
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P2/0/(TOWR_1)/0/0/0/(TOWR_5)/0/0/(TOWR_8);		tower
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P4/0/0/0/0/0/0/(NECR_6)/(NECR_7)/0;				necropolis
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P5/0/(DUNG_1)/0/0/(DUNG_4)/0/0/0/(DUNG_8);		dungeon
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P6/0/0/0/0/0/0/0/(STRO_7)/0;						stronghold
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P7/0/(FORT_1)/0/0/(FORT_4)/0/(FORT_6)/(FORT_7)/0;fortress
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P8/0/0/0/0/0/(CONF_5)/0/(CONF_7)/0;				conflux
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P6/1/0/0/0/0/0/0/0/(SAND_8);						sand town
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P5/1/0/0/0/0/0/0/0/(SHAD_8);						shadow town
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P0/1/0/0/0/(COVE_4)/0/(COVE_6)/0/(COVE_8);		cove
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P1/4/(KITE_1)/0/0/0/(KITE_5)/0/0/(KITE_8);		kitezh grad
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P5/3/0/0/0/0/(MYTH_5)/0/0/0;						mythology
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P3/1/0/0/0/(TECH_4)/0/0/0/(TECH_8);				Techno town
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P0/3/0/0/0/(KNIG_4)/0/0/0/(KNIG_8);				knight castle
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P7/2/0/0/0/0/0/0/0/(SWAM_8);						deep swamp
+!!FU(third_upgrade_dlg)&(itemId)=(ITEMID_TOWN_TOWNPIC):P6/3/0/0/0/0/(PYRA_5)/(PYRA_6)/0/0;				pyramid
+
+
+
+
+
+ ; toggle default upgrades / third upgrades 
+ ; default upgrades
+!!VRv4056:S(townType);					needed for FU(change_monsters_variant2)
+!!VRv100:S4000+(townId);				variable town subtype 
+!!FU(change_monsters_variant2)&(itemId)=(ITEMID_TOWN_HALLPIC)/i^def_upgrades^=1:P;
+!!VRy25&i^def_upgrades^=1:S100;			temporary variable
+!!VRi^def_upgrades^&i^def_upgrades^=1:S0;
+!!UN&(itemId)=(ITEMID_TOWN_HALLPIC)/y25=100:R4;
+!!FU(OnTownMouseClick)&y25=100:E;
+
+
+ ; third upgrades
+!--!FU(third_upgrades_mithril_apply)&(itemId)=(ITEMID_TOWN_HALLPIC)/i^def_upgrades^=0:P;
+!!FU(third_upgrade_apply_all)&(itemId)=(ITEMID_TOWN_HALLPIC)/i^def_upgrades^=0:P;
+!!VRi^def_upgrades^&i^def_upgrades^=0:S1;
+!!UN&(itemId)=(ITEMID_TOWN_HALLPIC):R4;					redraw screen
+
+
+
+
+
+
+
+ ; ==================================================================
+
+
+!?FU(OnTownMouseHint); 
+!!UN:P(WOG_OPT_CASTLE_UPGRADING)/?(wogOption:y);  
+
+; display hint text
+!!CM:I?(itemId:y);  
+!-!SN&(itemId)=(ITEMID_TOWN_TOWNPIC):T^wog.45.hintTownPic^/?(hint:z);
+!-!SN&(itemId)=(ITEMID_TOWN_TOWNPIC):T^Third upgrades menu^/?(hint:z);
+!-!SN&(itemId)=(ITEMID_TOWN_HALLPIC):T^Normal / third upgrades toggle^/?(hint);			error on game start !
+!-!CM|(itemId)=(ITEMID_TOWN_TOWNPIC)/(itemId)=(ITEMID_TOWN_HALLPIC):M(hint);			error on game start !
+
+!!VRz8:S^ ===   Third upgrades menu   ===^;
+!!CM&(itemId)=(ITEMID_TOWN_TOWNPIC):Mz8;
+
+!!VRz9:S^ ===   Toggle:   Normal upgrades / Third upgrades   ===^;
+!!CM&(itemId)=(ITEMID_TOWN_HALLPIC):Mz9;
+
+
+
+
+
+
+
+
+
+ ; ==================================================================
+
+!?FU(third_upgrade_dlg);
+
+ ; x1 - town type
+ ; x2 - town subtype (var1, var2 ... )
+ ; x3 - 1 level dlg option
+ ; x4 - 2 level dlg
+ ; x5 - 3 level dlg
+ ; x6 - 4 level dlg
+ ; x7 - 5 level dlg
+ ; x8 - 6 level dlg
+ ; x9 - 7 level dlg
+ ; x10- 8 level dlg
+ 
+ 
+; получение необходимых параметров города
+!!CA(CURRENT_TOWN):O?(ownerId:y) U?(townId:y) T?(townType:y); 
+
+; выход если не наш город
+!!FU(WOG_GameMgr_GetPlayer_Me):P?(meId:y);
+!!FU&(ownerId)<>(meId):E;
+
+!!VRy7:S(townId)+4000;									get variable v4000...v4030 for each town (0,1...)
+!!VRv4069:S1;											exit option checked by default
+!!VRz15:S^Choose creature for 3 upgrade: ^;
+
+!!VRz1:S^^;
+!!VRz2:S^^;
+!!VRz3:S^^;
+!!VRz4:S^^;
+!!VRz5:S^^;
+!!VRz6:S^^;
+!!VRz7:S^^;
+!!VRz8:S^^;
+!!VRz9:S^^;
+!!VRz10:S^^;
+
+!!VRz1&x3>0:S^1 lv. - creature (%(TU_1_GOLD) gold, %(TU_1_MITH) mithril)^;
+!!VRz2&x4>0:S^2 lv. - creature (%(TU_2_GOLD) gold, %(TU_2_MITH) mithril)^;
+!!VRz3&x5>0:S^3 lv. - creature (%(TU_3_GOLD) gold, %(TU_3_MITH) mithril)^;
+!!VRz4&x6>0:S^4 lv. - creature (%(TU_4_GOLD) gold, %(TU_4_MITH) mithril)^;
+!!VRz5&x7>0:S^5 lv. - creature (%(TU_5_GOLD) gold, %(TU_5_MITH) mithril)^;
+!!VRz6&x8>0:S^6 lv. - creature (%(TU_6_GOLD) gold, %(TU_6_MITH) mithril)^;
+!!VRz7&x9>0:S^7 lv. - creature (%(TU_7_GOLD) gold, %(TU_7_MITH) mithril)^;
+!!VRz8&x10>0:S^8 lv.- creature (%(TU_8_GOLD) gold, %(TU_8_MITH) mithril)^;
+
+ 
+ ; create dlg 
+!!IF&(townType)=x1/vy7=x2:G1/4069/1/z15/^Exit^/z1/z2/z3/z4/z5/z6/z7/z8/0/0;
+ 
+
+ ; link x3...x9 variables with global variable for third upgrade  (monster_id + 6000)
+!!VRy61:Sx3+6000;
+!!VRy62:Sx4+6000;
+!!VRy63:Sx5+6000;
+!!VRy64:Sx6+6000;
+!!VRy65:Sx7+6000;
+!!VRy66:Sx8+6000;
+!!VRy67:Sx9+6000;
+!!VRy68:Sx10+6000; 
+ 
+  ; check dlg options 
+!!FU(third_upgrade_dlg)&v4069=1:E;					exit, if checked 1 option in dialog
+
+ ; 1 lv.- 2,	2 lv.-4,	3 lv.-8,	 4 lv.-16,	 5 lv.-32,	 6 lv.-64,	 7 lv.-128   8 lv.-256
+ ; exit if 3 upgrade dwelling already build
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x3>0/vy61>0/v4069=2:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x4>0/vy62>0/v4069=4:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x5>0/vy63>0/v4069=8:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x6>0/vy64>0/v4069=16:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x7>0/vy65>0/v4069=32:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x8>0/vy66>0/v4069=64:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x9>0/vy67>0/v4069=128:E;
+!!FU(third_upgrade_dlg)&(townType)=x1/vy7=x2/x10>0/vy68>0/v4069=256:E;
+
+
+
+!!OW:R(ownerId)/6/?y50;		get player gold before
+!!OW:R(ownerId)/7/?y51;		get player mithril before
+
+ ; 1 cost for 3upgrade
+!!VRy48&v4069=2:S(TU_1_GOLD);		gold
+!!VRy49&v4069=2:S(TU_1_MITH);		mithril
+
+ ; 2 level creature
+!!VRy48&v4069=4:S(TU_2_GOLD);		
+!!VRy49&v4069=4:S(TU_2_MITH);
+
+ ; 3 level creature
+!!VRy48&v4069=8:S(TU_3_GOLD);		
+!!VRy49&v4069=8:S(TU_3_MITH);
+
+ ; 4 level creature
+!!VRy48&v4069=16:S(TU_4_GOLD);		
+!!VRy49&v4069=16:S(TU_4_MITH);			
+
+ ; 5 level creature
+!!VRy48&v4069=32:S(TU_5_GOLD);		
+!!VRy49&v4069=32:S(TU_5_MITH);			
+
+ ; 6 level creature
+!!VRy48&v4069=64:S(TU_6_GOLD);		
+!!VRy49&v4069=64:S(TU_6_MITH);		
+
+ ; 7 level creature
+!!VRy48&v4069=128:S(TU_7_GOLD);		
+!!VRy49&v4069=128:S(TU_7_MITH);
+
+ ; 8 level creature
+!!VRy48&v4069=256:S(TU_8_GOLD);		
+!!VRy49&v4069=256:S(TU_8_MITH);
+
+ 
+!!VRy57:S0;
+!!VRy58:S0;
+!!VRy57:Sy50-y48;
+!!VRy58:Sy51-y49;
+!!IF&y57<0:M^Not enough resources!^;			%y57    %y50  %y48
+!!FU(third_upgrade_dlg)&y57<0:E;
+!!IF&y58<0:M^Not enough resources!^;
+!!FU(third_upgrade_dlg)&y58<0:E;
+
+!!OW:R(ownerId)/6/y57;				set new value of gold for player
+!!OW:R(ownerId)/7/y58;
+
+
+ ; build 3 upgrade vitual dwelling: 
+!!VRvy61&(townType)=x1/vy7=x2/v4069=2:Sx3;
+!!VRvy62&(townType)=x1/vy7=x2/v4069=4:Sx4;
+!!VRvy63&(townType)=x1/vy7=x2/v4069=8:Sx5;
+!!VRvy64&(townType)=x1/vy7=x2/v4069=16:Sx6;
+!!VRvy65&(townType)=x1/vy7=x2/v4069=32:Sx7;
+!!VRvy66&(townType)=x1/vy7=x2/v4069=64:Sx8;
+!!VRvy67&(townType)=x1/vy7=x2/v4069=128:Sx9;
+!!VRvy68&(townType)=x1/vy7=x2/v4069=256:Sx10;
+
+ 
+!!FU(third_upgrade_apply_all):P;
+!!UN:R4;												redraw town screen
+!!SN:P^BUILDTWN.wav^;									play sound	 
+ 
+ 
+!!FU(third_upgrade_dlg):E; 
+
+
+
+
+
+
+
+
+ ; =======================================================================
+ 
+!?FU(third_upgrades_custom_apply);
+
+ ; x1 -	town type
+ ; x2 - town subtype (var1,var2 ...)
+ ; x3 - creture_id 	(SWAM_7)
+ ; x4 - creature level
+ ; x5 - percents of growth
+
+; получение необходимых параметров города
+!!CA(CURRENT_TOWN):O?(ownerId:y) U?(townId:y) T?(townType:y);
+
+!!VRv4056:S(townType);					needed for FU(change_monsters_variant2)
+!!VRv100:S4000+(townId);				variable town subtype 
+
+!!VRy30:S0;		!!VRy30:Sx3+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0:P(townId)/x4/1/2/x3/x5;			Swamp Keeper
+
+!-!IF&(townType)=x1/vv100=x2:M^  %x5  ^;
+
+
+
+
+ 
+ 
+ ; ========================================================================
+
+!?FU(third_upgrade_apply_all);
+
+!!FU(third_upgrade_apply):P0/0/0/0/0/0/(CSTL_5)/0/0/0;						castle
+!!FU(third_upgrade_apply):P1/0/0/0/0/0/(RAMP_5)/0/0/(RAMP_8);				rampart
+!!FU(third_upgrade_apply):P2/0/(TOWR_1)/0/0/0/(TOWR_5)/0/0/(TOWR_8);		tower
+!!FU(third_upgrade_apply):P4/0/0/0/0/0/0/(NECR_6)/(NECR_7)/0;				necropolis
+!!FU(third_upgrade_apply):P5/0/(DUNG_1)/0/0/(DUNG_4)/0/0/0/0;				dungeon
+!!FU(third_upgrade_apply):P6/0/0/0/0/0/0/0/(STRO_7)/0;						stronghold
+!!FU(third_upgrade_apply):P7/0/(FORT_1)/0/0/(FORT_4)/0/(FORT_6)/(FORT_7)/0;	fortress
+!!FU(third_upgrade_apply):P8/0/0/0/0/0/(CONF_5)/0/(CONF_7)/0;				conflux
+!!FU(third_upgrade_apply):P0/1/0/0/0/(COVE_4)/0/(COVE_6)/0/0;				cove
+!!FU(third_upgrade_apply):P1/4/0/0/0/0/(KITE_5)/0/0/(KITE_8);				kitezh grad
+!!FU(third_upgrade_apply):P3/1/0/0/0/(TECH_4)/0/0/0/(TECH_8);				techno town
+!!FU(third_upgrade_apply):P0/3/0/0/0/(KNIG_4)/0/0/0/(KNIG_8);				knight castle
+!!FU(third_upgrade_apply):P7/2/0/0/0/0/0/0/0/(SWAM_8);						deep swamp
+!!FU(third_upgrade_apply):P6/3/0/0/0/0/(PYRA_5)/0/0/0;						pyramid
+
+
+!!FU(third_upgrades_custom_apply):P6/1/(SAND_8)/6/50;			sand town
+!!FU(third_upgrades_custom_apply):P5/1/(SHAD_8)/6/50;			shadow town
+!!FU(third_upgrades_custom_apply):P5/0/(DUNG_8)/6/50;			dungeon
+!!FU(third_upgrades_custom_apply):P0/1/(COVE_8)/6/50;			cove
+!!FU(third_upgrades_custom_apply):P1/4/(KITE_1)/0/-1009;		mohovik		(additional creature)
+!-!FU(third_upgrades_custom_apply):P1/4/(KITE_8)/6/50;			volot
+!-!FU(third_upgrades_custom_apply):P7/2/(SWAM_8)/6/50;			deep swamp
+!!FU(third_upgrades_custom_apply):P5/3/(MYTH_5)/1/35;			mythology
+!!FU(third_upgrades_custom_apply):P6/3/(PYRA_6)/5/35;			pyramid (1 from 3)
+
+	
+
+
+; =============================================================
+
+!?FU(third_upgrade_apply);
+
+ ; x1 - town type
+ ; x2 - town subtype (var1, var2 ... )
+ ; x3 - 1 level dlg option
+ ; x4 - 2 level dlg
+ ; x5 - 3 level dlg
+ ; x6 - 4 level dlg
+ ; x7 - 5 level dlg
+ ; x8 - 6 level dlg
+ ; x9 - 7 level dlg
+ 
+; получение необходимых параметров города
+!!CA(CURRENT_TOWN):O?(ownerId:y) U?(townId:y) T?(townType:y); 
+
+!!VRv4056:S(townType);								needed for FU(change_monsters_variant2)
+!!VRv100:S4000+(townId);							variable town subtype 
+
+!!FU(third_upgrade_apply)&(townType)<>x1:E;			exit if wrong town type
+!!FU(third_upgrade_apply)&vv100<>x2:E;				exit if wrong town subtype
+!!FU(third_upgrade_apply)&-1000:E;					exit if not Human
+
+!!FU(change_monsters_variant2):P;					set 2 upgrades to default
+
+!!UN:Tx1/0/1/?y51;									get default 2 upgrade	1 lv.
+!!UN:Tx1/1/1/?y52;	
+!!UN:Tx1/2/1/?y53;
+!!UN:Tx1/3/1/?y54;
+!!UN:Tx1/4/1/?y55;		
+!!UN:Tx1/5/1/?y56;
+!!UN:Tx1/6/1/?y57;	
+
+ ; show all 3 upgrades in dlg
+!!VRy30:S0;		!!VRy30:Sx3+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x3>0:P(townId)/0/1/2/x3/100;		1 level 
+!!VRy30:S0;		!!VRy30:Sx4+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x4>0:P(townId)/1/1/2/x4/100;		2 level
+!!VRy30:S0;		!!VRy30:Sx5+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x5>0:P(townId)/2/1/2/x5/100;		3 level
+!!VRy30:S0;		!!VRy30:Sx6+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x6>0:P(townId)/3/1/2/x6/100;		4 level	
+!!VRy30:S0;		!!VRy30:Sx7+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x7>0:P(townId)/4/1/2/x7/100;		5 level	
+!!VRy30:S0;		!!VRy30:Sx8+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x8>0:P(townId)/5/1/2/x8/100;		6 level
+!!VRy30:S0;		!!VRy30:Sx9+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x9>0:P(townId)/6/1/2/x9/100;		7 level
+!!VRy30:S0;		!!VRy30:Sx10+6000;
+!!FU(dex_SetDwellingSlotByTownId)&(townType)=x1/vv100=x2/vy30>0/x10>0:P(townId)/6/1/2/x10/50;		8 level
+
+
+
+!!VRy30:S0;		!!VRy30:Sx3+6000;		!!UN&vy30>0/x3>0:Tx1/0/1/x3;	!!MA&vy30>0/x3>0:Uy51/x3;		1 lv
+!!VRy30:S0;		!!VRy30:Sx4+6000;		!!UN&vy30>0/x4>0:Tx1/1/1/x4;	!!MA&vy30>0/x4>0:Uy52/x4;
+!!VRy30:S0;		!!VRy30:Sx5+6000;		!!UN&vy30>0/x5>0:Tx1/2/1/x5;	!!MA&vy30>0/x5>0:Uy53/x5;
+!!VRy30:S0;		!!VRy30:Sx6+6000;		!!UN&vy30>0/x6>0:Tx1/3/1/x6;	!!MA&vy30>0/x6>0:Uy54/x6;
+!!VRy30:S0;		!!VRy30:Sx7+6000;		!!UN&vy30>0/x7>0:Tx1/4/1/x7;	!!MA&vy30>0/x7>0:Uy55/x7;
+!!VRy30:S0;		!!VRy30:Sx8+6000;		!!UN&vy30>0/x8>0:Tx1/5/1/x8;	!!MA&vy30>0/x8>0:Uy56/x8;
+!!VRy30:S0;		!!VRy30:Sx9+6000;		!!UN&vy30>0/x9>0:Tx1/6/1/x9;	!!MA&vy30>0/x9>0:Uy57/x9;
+
+
+
+
+; =============================================================
+
+!?FU(OnPreTownScreen);
+!--!FU(third_upgrades_mithril_apply):P;
+!!FU(third_upgrade_apply_all):P;
+
+
+
+
+
+
+ ; =======================================================================
+
+ ; disable 3upgrades for AI
+!?FU(OnEveryDay)&-1000; 
+
+!!MA:U29/-2;		tower
+!!MA:U37/-2;
+
+!!MA:U67/-2;		necropolis
+!!MA:U69/-2;
+
+!!MA:U97/-2;		stronghold
+
+!!MA:U99/-2;		fortress
+!!MA:U107/-2;
+!!MA:U109/-2;
+!!MA:U111/-2;
+
+!!MA:U125/-2;		conflux
+!!MA:U131/-2;
+
+!!MA:U366/-2;		cove
+!!MA:U370/-2;		
+
+!!MA:U543/-2;		pyramid
+
+!!FU(RESTORE_monsters):P;
+
+
+
+
+ 
+ ; ======================================================================= 
+ 
+ ; dialog for creature upgrade
+!?FU(OnDetermineMonInfoDlgUpgrade);
+!#VA(monType:x) (upgType:x) (town:x) (hero:x);
+
+; Exit if there is an existing upgrade or is not in a town
+!!FU|(upgType)>(NO_MON)/(town)=(NO_TOWN):E;
+
+!!MA:L(monType)/?(level:y);
+!!VR(buildingId:y):S(level) +37;        [37-43 upgraded dwellings]
+!!CA0/(town):B3/(buildingId);           [check if built into flag 1]
+
+!!if&1;
+  !!FU(GetUpgradedMonster):P(monType)/?(upgraded:y);
+  !!VR(upgType)&(upgraded)>(NO_MON):S(upgraded);
+!!en;
+
+
+
+
+

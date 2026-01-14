@@ -1,0 +1,146 @@
+ZVSE
+
+; show objects on map for debug
+
+
+	
+!?FU(OnEveryDay)&1000/v4081=1;		
+
+
+!-!FU(show_on_map):P25/0;		dragon Utopia
+
+!-!FU(show_on_map):P16/13;		dwelling god_1
+!-!FU(show_on_map):P16/14;
+!-!FU(show_on_map):P16/15;
+!-!FU(show_on_map):P16/16;
+
+
+
+ ; standart WOG level 8
+!-!FU(show_on_map):P17/80;
+!-!FU(show_on_map):P17/81;
+!-!FU(show_on_map):P17/82;
+!-!FU(show_on_map):P17/83;
+!-!FU(show_on_map):P17/84;
+!-!FU(show_on_map):P17/85;
+!-!FU(show_on_map):P17/86;
+!-!FU(show_on_map):P17/87;
+!-!FU(show_on_map):P17/88;		
+
+
+
+!-!FU(show_on_map):P17/110;		Bastion dwellings
+!-!FU(show_on_map):P17/111;
+!-!FU(show_on_map):P17/112;
+!-!FU(show_on_map):P17/113;
+!-!FU(show_on_map):P17/114;
+!-!FU(show_on_map):P17/115;
+!-!FU(show_on_map):P17/116;		Warriors of Anubis
+
+!-!FU(show_on_map):P17/109;		Great Ents tree
+!-!FU(show_on_map):P17/119;		shedu dwelling
+!-!FU(show_on_map):P17/120;		worms
+
+!--!FU(show_on_map):P17/121;		iratus
+!--!FU(show_on_map):P17/122;		voin sveta
+!---!FU(show_on_map):P17/123;		dark angel
+!--!FU(show_on_map):P17/124;		Serafims
+
+!-!FU(show_on_map):P17/125;		Epic Paladins	
+!-!FU(show_on_map):P17/126;		Atlants Palace
+!-!FU(show_on_map):P17/127;		paladins
+!-!FU(show_on_map):P17/128;		color Coatles
+	
+
+!-!FU(show_on_map):P17/129;		tiamat
+!-!FU(show_on_map):P17/130;		favns
+!-!FU(show_on_map):P17/131;		tritons
+!-!FU(show_on_map):P17/132;		dark elementals			
+
+!-!FU(show_on_map):P17/134;		Stone Giants
+!--!FU(show_on_map):P17/135;		Green Behemots
+!---!FU(show_on_map):P17/137;		Red Assid's Nest		
+!---!FU(show_on_map):P17/138;		Golden Nix Fort		
+!--!FU(show_on_map):P17/139;		Whirlpool of Golden Snakes	
+!--!FU(show_on_map):P17/142;		Sandworms Cave	
+!-!FU(show_on_map):P17/143;		Paladins Palace		
+
+
+!-!FU(show_on_map):P20/2;		Water Palace		
+!-!FU(show_on_map):P20/3;		Palace of Genies
+
+
+!-!FU(show_on_map):P16/89;		Knight's Utopia
+!-!FU(show_on_map):P16/90;		Crusader's Outpost
+
+
+ ; creatures
+!-!FU(show_on_map):P54/444;	
+!--!FU(show_on_map):P54/279;		fangarms
+!-!FU(show_on_map):P54/372;
+!-!FU(show_on_map):P54/607;
+!-!FU(show_on_map):P54/443;
+!-!FU(show_on_map):P54/608;
+!-!FU(show_on_map):P54/450;	
+!--!FU(show_on_map):P54/614;		Nightmare Knight
+!-!FU(show_on_map):P54/596;
+!-!FU(show_on_map):P54/580;
+!-!FU(show_on_map):P54/425;
+!-!FU(show_on_map):P54/427;
+!-!FU(show_on_map):P54/429;	
+!-!FU(show_on_map):P54/546;
+!--!FU(show_on_map):P54/407;		pegas
+!-!FU(show_on_map):P54/591;
+!-!FU(show_on_map):P54/548;
+!-!FU(show_on_map):P54/269;
+!--!FU(show_on_map):P54/259;		leprecon	
+!--!FU(show_on_map):P54/456;		gnol shaman
+!-!FU(show_on_map):P54/578;
+!-!FU(show_on_map):P54/598;
+!-!FU(show_on_map):P54/595;
+
+
+!-!FU(show_on_map):P5/400;
+!-!FU(show_on_map):P5/401;
+!-!FU(show_on_map):P5/402;
+!!FU(show_on_map):P5/403;
+!!FU(show_on_map):P5/404;
+!!FU(show_on_map):P5/405;
+!!FU(show_on_map):P5/406;
+
+
+
+
+
+
+!!IF:M^Showing objects on the map ^;			%v100  
+
+
+
+
+	
+
+
+
+
+-----------------------------
+!?FU(show_on_map); 
+ ; x1 - type
+ ; x2 - subtype
+!!VRv8020:Sx1;
+!!VRv8021:Sx2; 
+
+!!VRv100:S0;		
+!!UN:Ux1/x2/?v100;
+!-!IF:M^ = 17-119 dw count:  %v100  ^;
+!!VRv1:S-1; 
+!!DO(dw_NN4)/1/v100/1:P; 
+	!?FU(dw_NN4); 
+	!!UN:Uv8020/v8021/-1/1; 					
+	!!UN:Sv1/v2/v3/0/3; 			open dwellings view on map	
+	!--!UN&v4081=0:Hv1/v2/v3/0/3;		hide dwellings on the map
+	
+
+!!FU(show_on_map):E; 
+
+	

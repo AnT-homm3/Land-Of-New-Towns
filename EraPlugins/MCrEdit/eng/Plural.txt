@@ -198,7 +198,7 @@ Dracoliches
 Wood dwellers
 Treefolk Wizards
 Magician
-Giant Ents
+Great Old Ents
 Ancient Ents
 Forest Birds
 Loogans
@@ -402,10 +402,10 @@ Sea Dogs
 
 Mythical harpies jr.
 Mythical harpies
-Big centaurs
-Mythical Centaurs
-Mistresses of Snakes
-Medusas Gorgon
+Ñentaurs archer jr.
+Centaurs - Archers
+Pegasus jr.
+Mythical  Pegasus
 Cyclops the Cannibal
 Cyclops Leaders
 Big Minotaurs
@@ -441,7 +441,7 @@ Monks of Light
 Cavalry Crusaders
 Champion Crusaders
 Fearless Knights
-Great Knigt
+Great Knights
 
 
 
@@ -451,13 +451,13 @@ Dark Angels
 Legendary Sand Worms
 Upg. Golden Golem
 
-
+Poisonous Viverns
 Sky genies
 Grandmasters gremlins
 Gnoll Shamans
 Kings of Vasilisks
-Advanced  Chaos Hydras
-
+Red Chaos Hydras
+Sunrise Phoenix
 Lava elementals
 Dendroid Leaders
 
@@ -473,7 +473,7 @@ Dendroid Leaders
 
 
 
-
+Owners of the swamp
 Snow Centaurids jr.
 Snow Centaurides
 snow boars jr.
@@ -578,7 +578,7 @@ avatars of Anubis
 
 Colorful Coatles
 Prime Leaders
-
+Swamp Keepers
 Walking Plants jr.
 Walking Plants
 Treebeards jr.
@@ -603,26 +603,26 @@ Fire Ifrits
 The Great Stone Giants
 Green Behemoth
 Metamorphs
+Red Ayssids
+Golden Nix-Warriors
+Golden Haspids
+Royal Paladins
 
 
 
 
 
+Nightmare Knights
+Dark Shadow Dragons
 
+Great Mythic Ñentaur
+Monstrous Troglodites
+Meduzas empress
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Adv. Armored Knights
+RollerCyborg jr.
+RollerCyborg
+Advanced Mech Gryphons
 
 
 

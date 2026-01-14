@@ -6,7 +6,7 @@
 									
 					"density": 20,
 					"enabled": true,
-					"name": "Magic Utopia1",
+					"name": "Magic Utopia",
 					"properties": [
 						"UtopMagi.def 110111111101111111111111111111111111111111111111 001000000000000000000000000000000000000000000000 111111111 011111111 16 36 0 0"
 					],
@@ -16,171 +16,37 @@
 					},
 					"states": [
 						{
-							"artifactTypeCounts": [
-								0,
-								0,
-								1,
-								1
-							],
-							"chance": 100,
-							"creatureRewardCount": 1,
-							"creatureRewardType": 258,
-							"guardians": {
-								"count": [
-									5,
-									5,
-									5,
-									5,
-									0,
-									0,
-									0
-								],
-								"type": [
-									134,
-									134,
-									134,
-									133,
-									-1,
-									-1,
-									-1
-								]
-							},
-							"resources": [
-								7,
-								3,
-								0,
-								0,
-								15,
-								2,
-								1
-							],
-							"upgrade": 50
-						},
-						{
-							"artifactTypeCounts": [
-								0,
-								0,
-								0,
-								0
-							],
-							"chance": 30,
-							"creatureRewardCount": 1,
-							"creatureRewardType": 258,
-							"guardians": {
-								"count": [
-									14,
-									14,
-									14,
-									14,
-									14,
-									0,
-									0
-								],
-								"type": [
-									114,
-									114,
-									114,
-									114,
-									114,
-									-1,
-									-1
-								]
-							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								0,
-								0
-							],
-							"upgrade": 50
-						},
-						{
-							"artifactTypeCounts": [
-								0,
-								0,
-								0,
-								0
-							],
-							"chance": 30,
+							"artifactTypeCounts": [0,0,1,1],
+							"chance": 85,
 							"creatureRewardCount": 3,
-							"creatureRewardType": 130,
+							"creatureRewardType": 134,
 							"guardians": {
-								"count": [
-									21,
-									21,
-									21,
-									21,
-									21,
-									0,
-									0
-								],
-								"type": [
-									114,
-									114,
-									114,
-									114,
-									114,
-									-1,
-									-1
-								]
-							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								0,
-								0
-							],
-							"upgrade": 50
+								"count": [4,4,4,4,0,0,0],
+								"type": [134,134,134,134,-1,-1,-1],
+										 },
+							"resources": [0,0,0,0,0,15,30000,3],
+							"upgrade": 0
 						},
+						
+						
 						{
-							"artifactTypeCounts": [
-								0,
-								0,
-								0,
-								0
-							],
-							"chance": 10,
-							"creatureRewardCount": 4,
-							"creatureRewardType": 130,
+							"artifactTypeCounts": [0,0,2,1],
+							"chance": 15,
+							"creatureRewardCount": 10,
+							"creatureRewardType": 134,
 							"guardians": {
-								"count": [
-									28,
-									28,
-									28,
-									28,
-									28,
-									0,
-									0
-								],
-								"type": [
-									114,
-									114,
-									114,
-									114,
-									114,
-									-1,
-									-1
-								]
-							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								0,
-								0
-							],
-							"upgrade": 50
-						}
+								"count": [7,7,7,7,0,0,0],
+								"type": [134,134,134,134,-1,-1,-1],
+										 },
+							"resources": [0,0,0,0,0,30,70000,8],
+							"upgrade": 0
+						},
+						
+						
+			
 					],
-					"value": 4000
+					"value": 11000
+					"map": 2
 				},
 				
 				
@@ -195,7 +61,7 @@
 					"enabled": true,
 					"name": "Pyramid Utopia",
 					"properties": [
-						"UtopPyra.def 110111111101111111111111111111111111111111111111 001000000000000000000000000000000000000000000000 111111111 011111111 16 91 0 0"
+						"UtopPyra.def 000111111111111111111111111111111111111111111111 010000000000000000000000000000000000000000000000 111111111 011111111 16 91 0 0"
 					],
 					"sound": {
 						"enter": null,
@@ -204,28 +70,28 @@
 					"states": [
 						{
 							"artifactTypeCounts": [0,0,1,0],
-							"chance": 90,
-							"creatureRewardCount": 7,
+							"chance": 95,
+							"creatureRewardCount": 5,
 							"creatureRewardType": 546,
 							"guardians": {
-								"count": [5,20,10,15,0,0,0],
+								"count": [4,10,10,10,0,0,0],
 								"type":  [546,545,545,323,-1,-1,-1]
 							},
-							"resources": [0,0,0,0,0,0,40000,0],
+							"resources": [0,0,0,0,0,0,50000,0],
 							"skills.primary": [0,0,0,2],
-							"upgrade": 50
+							"upgrade": 10
 						},
 						{
 							"artifactTypeCounts": [0,0,1,0],
-							"chance": 10,
-							"creatureRewardCount": 7,
+							"chance": 5,
+							"creatureRewardCount": 8,
 							"creatureRewardType": 546,
 							"guardians": {
 								"count": [
-									12,
-									25,
+									7,
 									20,
-									25,
+									20,
+									20,
 									0,
 									0,
 									0
@@ -242,11 +108,12 @@
 							},
 							"resources": [0,0,0,0,0,0,100000,5],
 							"skills.primary": [0,0,0,2],
-							"upgrade": 50
+							"upgrade": 10
 						},
 
 					],
-					"value": 8000
+					"value": 9000
+					"map": 2
 				},
 				
 				
@@ -275,90 +142,43 @@
 					},
 					"states": [
 						{
-							"artifactTypeCounts": [
-								0,
-								1,
-								0,
-								0
-							],
+							"artifactTypeCounts": [0,1,0,0],
 							"chance": 70,
 							"creatureRewardCount": 3,
 							"creatureRewardType": 443,
 							"guardians": {
-								"count": [
-									5,
-									5,
-									8,
-									8,
-									15,
-									15,
-									0
-								],
-								"type": [
-									443,
-									443,
-									442,
-									442,
-									441,
-									441,
-									-1
-								]
+								"count": [5,5,8,8,20,20,0],
+								"type":  [443,443,442,442,441,441,-1]
+
 							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								20,
-								30000
-							],
-							"upgrade": 50
+							"resources": [0,0,0,0,0,20,25000,0],
+							"skills.primary": [1,0,0,0],
+							"upgrade": 10
 						},
+						
+						
 						{
-							"artifactTypeCounts": [
-								0,
-								0,
-								1,
-								0
-							],
+							"artifactTypeCounts": [0,2,0,0],
 							"chance": 30,
-							"creatureRewardCount": 5,
+							"creatureRewardCount": 7,
 							"creatureRewardType": 443,
 							"guardians": {
-								"count": [
-									10,
-									10,
-									18,
-									18,
-									45,
-									45,
-									45
-								],
-								"type": [
-									443,
-									443,
-									442,
-									442,
-									441,
-									441,
-									441
-								]
+								"count": [10,10,14,14,35,35,0],
+								"type":  [443,443,442,442,441,441,-1]
+
 							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								30,
-								100000
-							],
-							"upgrade": 50
+							"resources": [0,0,0,0,0,30,90000,0],
+							"skills.primary": [2,0,0,0],
+							"upgrade": 0
 						},
+						
+											
+						
+
 
 					],
-					"value": 14000
+					"value": 11000
+					"map": 2
 				},
 				
 				
@@ -368,11 +188,11 @@
 				
 				"90": {
 									
-					"density": 30,
+					"density": 20,
 					"enabled": true,
 					"name": "Crusader's Outpost",
 					"properties": [
-						"b_Crusad.def 110111111101111111111111111111111111111111111111 001000000000000000000000000000000000000000000000 111111111 011111111 16 90 0 0"
+						"b_Crusad.def 000111111111111111111111111111111111111111111111 010000000000000000000000000000000000000000000000 111111111 011111111 16 90 0 0"
 					],
 					"sound": {
 						"enter": null,
@@ -380,50 +200,25 @@
 					},
 					"states": [
 						{
-							"artifactTypeCounts": [
-								1,
-								1,
-								0,
-								0
-							],
+							"artifactTypeCounts": [0,2,0,0],
 							"chance": 100,
-							"creatureRewardCount": 2,
-							"creatureRewardType": 443,
+							"creatureRewardCount": 15,
+							"creatureRewardType": 437,
 							"guardians": {
-								"count": [
-									20,
-									15,
-									30,
-									30,
-									35,
-									0,
-									0
-								],
-								"type": [
-									437,
-									437,
-									436,
-									7,
-									7,
-									-1,
-									-1
-								]
+								"count": [10,15,15,30,25,0,0],
+								"type": [437,436,436,435,7,-1,-1]
+
 							},
-							"resources": [
-								0,
-								0,
-								0,
-								0,
-								0,
-								0,
-								20000
-							],
-							"upgrade": 50
+							"resources": [0,0,0,0,0,0,0,0],
+							"skills.primary": [0,1,0,0],
+							"upgrade": 10
 						},
 						
 
 					],
-					"value": 9000
+					"value": 5000,
+					"map": 5,
+					"zone": 2
 				},
 				
 				

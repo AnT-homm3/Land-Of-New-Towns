@@ -18,11 +18,11 @@ ZVSE
 !-!CA-1:T?y8;		get town type
 !-!IF&-1/y8=0:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Castle^/^1- Cove^/^2- Ruins^/^3- Knight's Castle^/^4- ^/^5 - ^/0/0/0/0/0;
 !-!IF&-1/y8=1:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Rampart^/^1- WonderWoods^/^2- Magic Forest^/^3- Druids town^/^4- Kitezh Grad^/^5 - Preserve^/0/0/0/0/0;
-!-!IF&-1/y8=2:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Tower^/^1- ^/^2- Ice Castle^/^3- Elemental Palace^/0/0/0/0/0/0/0;
+!-!IF&-1/y8=2:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Tower^/^1- Monastery^/^2- Ice Castle^/^3- Elemental Palace^/0/0/0/0/0/0/0;
 
 
 
-!!IF&-1:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Default homm3 town^/^1- Cove/WonderWoods//IceCastle/Techno_t/Shadow_t/Sand_t//Eldorado^/^2- Ruins/MagicFore/0/0//Bastion//Neutral_t/Courtyard^/^3- Knight's Castle | Druids_town | Oasis |  Mythology | Pyramid^/^4- Kitezh Grad / Ancient Temple^/^5 - ^/0/0/0/0/0;
+!!IF&-1:G1/4057/1/^Choose town type:^/^Same as start town^/^0 - Default homm3 town^/^1- Cove/WonderWoods/Monastery/IceCastle/Techno_t/Shadow_t/Sand_t/Mystic/Eldorado^/^2- Ruins/MagicFore/0/0/StrangeCult/Bastion/DeepSwamp/Neutral_t/Courtyard^/^3- Knight's Castle | Druids_town | Oasis |  Mythology | Pyramid^/^4- Kitezh Grad / Ancient Temple^/^5 - Preserve^/0/0/0/0/0;
 !!VRy21&v4057=1:Sv4000;
 !!VRy21&v4057=2:S0;
 !!VRy21&v4057=4:S1;

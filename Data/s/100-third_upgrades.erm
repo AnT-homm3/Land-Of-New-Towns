@@ -2,13 +2,10 @@ ZVSE
 
 
 
-!-?PI;
-!-!FU(third_upgrades_and_deny_buildings):P;
-
 
 !?FU(OnGameEnter);
-!-!IF:M^asdasdas^;
 !!FU(third_upgrades_and_deny_buildings):P;
+
 
 
 
@@ -31,8 +28,7 @@ ZVSE
 vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
 
 
- ; Cove town
-!!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=1:Py1/2/1/2/373/100;	Sea Wolf(373),  100% of creatures (100)
+
 
 
 -----------------------------------------------
@@ -52,6 +48,15 @@ vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
 !!CA0/y1&y2=0/vx16=2:B5/17;		disallow Mayak (17) for Ruins
 
 
+ ; disallow for Techno Town
+!!CA0/y1&y2=3/vx16=1:B5/18;			bot horde
+!!CA0/y1&y2=3/vx16=1:B5/19;			bot horde upg
+ 
+
+ ; disallow for Kitezh Grad 
+ !!CA0/y1&y2=1/vx16=4:B5/24;		dendroid horde
+ !!CA0/y1&y2=1/vx16=4:B5/25;		dendroid horde upg
+
  ; disallow for IceCastle
 !!CA0/y1&y2=2/vx16=2:B5/4;			mage_guild level 5
 !!CA0/y1&y2=2/vx16=2:B5/17;			artifacts traders
@@ -59,10 +64,14 @@ vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
 !!CA0/y1&y2=2/vx16=2:B5/23;			wall of knowledge
 
 
- ; Elemental Palace
+ ; disallowElemental Palace
 !!CA0/y1&y2=2/vx16=2:B5/4;			mage_guild level 5
 !!CA0/y1&y2=2/vx16=2:B5/17;			artifacts traders
 !!CA0/y1&y2=2/vx16=2:B5/23;			wall of knowledge
+
+ ; disallow for Pyramid
+!!CA0/y1&y2=6/vx16=3:B5/21;			mercenaries guild
+!!CA0/y1&y2=6/vx16=3:B5/22;			ballist yard  
 
 
 
@@ -71,69 +80,49 @@ vx16						vx16 - new type of town (default / new / new_var2 / new_var3)
  ; Third upgrades (my)
 ----------------------------------------
 
-; Sand Town
-!!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=1:Py1/6/1/2/602/60;			Stone Giant
 
-; Castle
-!!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=0:Py1/4/1/2/169/70;			War Zealot
 
- ; Rampart
-!!FU(dex_SetDwellingSlotByTownId)&y2=1/vx16=0:Py1/4/1/2/461/100;		Ents leaders
- 
- ; Tower
-!!FU(dex_SetDwellingSlotByTownId)&y2=2/vx16=0:Py1/0/1/2/455/70;			Grandmaster gremlins
-!!FU(dex_SetDwellingSlotByTownId)&y2=2/vx16=0:Py1/4/1/2/454/70;			sky genie (454)   
 
  ; Necropolis
 !!FU(dex_SetDwellingSlotByTownId)&y2=4/vx16=0:Py1/2/1/2/159/30;			ghosts (159)
 
+ ; 3 Sand Town
+!!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=1:Py1/6/1/2/602/60;			Stone Giant
 
- ; Ice Castle
-!-!FU(dex_SetDwellingSlotByTownId)&y2=4/vx16=1:Py1/2/1/2/173/20;		santa-gremlins
+ ; 13 Cove town
+!!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=1:Py1/2/1/0/373/100;		Sea Wolf(373),  100% of creatures (100)
+!!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=1:Py1/2/1/1/364/100;
+!!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=1:Py1/2/1/2/363/100;
+!-!FU(dex_SetDwellingSlotByTownId)&y2=0/vx16=1:Py1/6/1/2/607/30;			Golden Haspids
 
- ; Kitezh Grad
-!!FU(dex_SetDwellingSlotByTownId)&y2=1/vx16=4:Py1/0/1/2/589/30;			Mohovik
-!!FU(dex_SetDwellingSlotByTownId)&y2=1/vx16=4:Py1/4/1/2/198/35;			advanced Treefolk Wizards
-!!FU(dex_SetDwellingSlotByTownId)&y2=1/vx16=4:Py1/6/1/2/577/35;			Volot
 
- ; Deep Swamp
-!!FU(dex_SetDwellingSlotByTownId)&y2=7/vx16=2:Py1/6/1/2/580/40;			Swamp Keeper
+!-!FU(dex_SetDwellingSlotByTownId)&y2=5/vx16=3:Py1/1/1/2/617/40;			Mythology
 
- ; Citadel
-!!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=0:Py1/6/1/2/603/60;			Big Behemots
+ ; 17 Techno town
+!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/6/0/2/428/100; 			Prime
+!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/6/1/2/428/100; 			Prime
+!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/6/1/3/429/100; 			Ultra Prime
+!-!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/6/1/2/579/60;			Prime Leader
 
- ; Elemental Palace
+
+ ; 21 Elemental Palace
 !!FU(dex_SetDwellingSlotByTownId)&y2=2/vx16=3:Py1/5/1/2/502/100;		snow golems-enchanters
 
- ; Courtyard
+ ; 22 Courtyard
 !!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=2:Py1/4/1/2/515/100;		Great dodo
 
- ; Pyramid
-!!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=3:Py1/4/1/2/451/65;			Upg. Golden Golem   451
-!!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=3:Py1/5/1/2/546/30;			Great Sphinx 546
-!-!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=3:Py1/5/1/0/546/30;			Great Sphinx 546
-
-
-; Fortress
-!!FU(dex_SetDwellingSlotByTownId)&y2=7/vx16=0:Py1/0/1/2/456/100;		Gnoll-shaman
-!!FU(dex_SetDwellingSlotByTownId)&y2=7/vx16=0:Py1/3/1/2/457/65;			King vasilisk
-!!FU(dex_SetDwellingSlotByTownId)&y2=7/vx16=0:Py1/6/1/2/458/80;			Upgraded Chaos Gidra (80% 4 gidras=3 new_gidras)
-
-; Conflux
-!-!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/0/1/2/460/65;
-!!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/4/1/2/460/65;			elemental of Lava	
-!!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/6/1/2/459/70;			Sunrise Phoenix
- ; increase Phoenix growth to default (*2 per week)
-!-!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/6/0/0/130/200;		dw7 Phoenix increase growth to 2
-!-!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/6/1/0/131/200;		upg.Phoenix increase growth to 2
-!-!FU(dex_SetDwellingSlotByTownId)&y2=8/vx16=0:Py1/6/1/1/130/200;		Phoenix increase growth to 2
-
-
- ; Techno town 579
-!!FU(dex_SetDwellingSlotByTownId)&y2=3/vx16=1:Py1/6/1/2/579/60;			Prime Leader
-
- ; Ancient Temple
+ ; 25 Ancient Temple
 !!FU(dex_SetDwellingSlotByTownId)&y2=6/vx16=4:Py1/6/1/2/578/70;			color Coatl
+
+
+
+
+
+
+
+
+
+
  
 
 !!FU(nn2p):E; 

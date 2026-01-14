@@ -216,8 +216,8 @@ ZVSE
 !!FU(SetBuilding'sPosition):P4/32/0/191;		3	668/101;			0/236;	
 !!FU(SetBuilding'sPosition):P4/33/615/191;		4	287/73;
 !!FU(SetBuilding'sPosition):P4/34/225/175;			5	8/146;
-!!FU(SetBuilding'sPosition):P4/35/362/90;		6
-!!FU(SetBuilding'sPosition):P4/36/663/25;			///
+!!FU(SetBuilding'sPosition):P4/35/0/30;		6			362/90;
+!!FU(SetBuilding'sPosition):P4/36/663/25;			///			
 !!FU(SetBuilding'sPosition):P4/37/70/236;		1	upgardes
 !!FU(SetBuilding'sPosition):P4/38/490/240;		2
 !!FU(SetBuilding'sPosition):P4/39/0/154;		3	ghosts		665/101;

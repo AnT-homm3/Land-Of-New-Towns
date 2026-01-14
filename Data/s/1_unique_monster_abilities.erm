@@ -94,7 +94,10 @@ ZVSE
 
 
  ; Kitezh Grad
-!!FU(casting_spell):P387/6/57/2/18;			Bilinny Bogatyr		thunder of titans (57)
+!!FU(casting_spell):P377/10/74/2/40;			cat bayn	40% chance 
+!!FU(casting_spell):P381/6/47/2/30;				baba yaga  disrupting ray (47)	30% chance 
+!-!FU(casting_spell):P387/6/57/2/18;			Bilinny Bogatyr		thunder of titans (57)
+
  
  
  ; Temple of Light 
@@ -105,6 +108,10 @@ ZVSE
 !-!FU(casting_spell):P438/10/25/1/100;			Monk of Light jr., exorcism(25)
 !--!FU(casting_spell):P439/7/15/1/30;				Monk of Light    magic bolt  30%chance
 !-!FU(casting_spell):P439/10/25/2/100;			Monk of Light    exorcism 
+!!FU(casting_spell_on_itself):P439/6/25/1/15;		Monk of Light, attack exorcism
+!-!FU(casting_spell_on_itself):P439/7/25/1/23;		Monk of Light, shoot  exorcism
+!-!FU(casting_spell):P439/10/15/3/100;				Monk of Light, shoot  light bolt
+!!FU(casting_spell_on_itself):P439/10/25/1/18;		Monk of Light, exorcism chance
 !--!FU(casting_spell):P441/6/25/1/40;				Knights of Shining    Exorcism(25)
 !!FU(undead_takes_more_damage_part1):P432/6/-1/1/100;	attack, increased damage to undead 
 !!FU(undead_takes_more_damage_part1):P432/7/-1/1/100;	shoot	
@@ -122,6 +129,7 @@ ZVSE
 !!FU(undead_takes_more_damage_part1):P441/6/-1/2/100;	increased damage to undead part_1
 !!FU(undead_takes_more_damage_part1):P442/6/-1/1/100;
 !!FU(undead_takes_more_damage_part1):P443/6/-1/2/100;
+!!FU(undead_takes_more_damage_part1):P608/6/-1/2/100;	Royal Paladins
 
  ; Deep Swamp
 !-!FU(casting_spell):P453/10/54/3/90;			Morra, slow all
@@ -176,14 +184,15 @@ ZVSE
  ; Cove town
 !!FU(monster_reduces_damage_taken):P369/-30;		NIXX   -30%  
 !!FU(monster_reduces_damage_taken):P370/-60;		NiXX Warrior
+!!FU(monster_reduces_damage_taken):P606/-67;		Golden NiX Warrior
 
  ; Ruins
 !!FU(monster_reduces_damage_taken):P400/-20;		LIVING STONE
 !!FU(monster_reduces_damage_taken):P401/-30;		Colosus
 
- ; increase damage to undead (by %) only for Temple_of_Light monsters
-!!FU(undead_takes_more_damage_part2)&v4076=1:P10;		increase by 15% (P15)
-!!FU(undead_takes_more_damage_part2)&v4076=2:P20;		increase by 20%
+ ; increase damage to undead (by %) only for Knight's Castke (Temple_of_Light) units
+!!FU(undead_takes_more_damage_part2)&v4076=1:P15;		increase by 15% (P15)
+!!FU(undead_takes_more_damage_part2)&v4076=2:P25;		increase by 25%
 
  ; Elemental Palace
 !!FU(monster_ignore_damage):P497/27;				Queen of Ice
@@ -191,10 +200,11 @@ ZVSE
  ; Abandoned Pyramid
 !!FU(monster_ignore_damage):P529/20;				Ghost of Pyramid
 
-!!FU(monster_ignore_damage):P443/25;				Paladins of Light
+!!FU(monster_ignore_damage):P443/25;				Great Paladins
+!!FU(monster_ignore_damage):P608/25;				Royal Paladins
 
  ; Deep Swamp
-!!FU(monster_ignore_damage):P465/20;				ghost of swamp
+!!FU(monster_ignore_damage):P467/20;				ghost of swamp
 
  ; all monsters
 !!FU(monster_ignore_damage):P328/30;				Necross Dragon
@@ -202,7 +212,7 @@ ZVSE
  
 
  
-!-!FU(UMA_ghost_ability):P464/6/50;				swamp ghost_1 	create 50% of soul eated creatures	 
+!-!FU(UMA_ghost_ability):P464/6/50;					swamp ghost_1 	create 50% of soul eated creatures	 
 !-!FU(UMA_ghost_ability):P464/3/50;
 
 
